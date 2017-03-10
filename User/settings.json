@@ -7,7 +7,7 @@
   "editor.tabSize": 4,
   "editor.minimap.enabled": true,
   "files.eol": "\n",
-"window.zoomLevel": 0,
+  "window.zoomLevel": 0,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -21,11 +21,11 @@
   "code-runner.executorMap": {
     "go": "go install"
   },
-"files.associations": {
+  "files.associations": {
     "*.tpl": "html",
     "*.hbs": "handlebars",
     "*.js": "javascriptreact"
-},
+  },
   "workbench.colorTheme": "One Monokai",
   "workbench.iconTheme": "vscode-great-icons"
 }
