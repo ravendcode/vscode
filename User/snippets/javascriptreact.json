@@ -1,0 +1,282 @@
+{
+    /*
+    	// Place your snippets for JavaScript React here. Each snippet is defined under a snippet name and has a prefix, body and
+    	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+    	// same ids are connected.
+    	// Example:
+    	"Print to console": {
+    		"prefix": "log",
+    		"body": [
+    			"console.log('$1');",
+    			"$2"
+    		],
+    		"description": "Log output to console"
+    	}
+    */
+    "Print to console": {
+        "prefix": "cw",
+        "body": [
+            "console.log($1)$2"
+        ],
+        "description": "Log output to console"
+    },
+    "#!/usr/bin/env node": {
+        "prefix": "benv",
+        "body": [
+            "#!/usr/bin/env node"
+        ],
+        "description": "#!/usr/bin/env node"
+    },
+    "iife": {
+        "prefix": "iife",
+        "body": [
+            "(function () {",
+            "\t'use strict';\n",
+            "\t$1",
+            "}());"
+        ],
+        "description": "Immediately-invoked function expression"
+    },
+    "fun": {
+        "prefix": "fl",
+        "body": [
+            "function ($1) {",
+            "\t$2",
+            "}"
+        ],
+        "description": "no named function"
+    },
+    "named function": {
+        "prefix": "fn",
+        "body": [
+            "function $1($2) {",
+            "\t$3",
+            "}"
+        ],
+        "description": "named function"
+    },
+    "require": {
+        "prefix": "req",
+        "body": [
+            "require('$1')$2"
+        ],
+        "description": "require"
+    },
+    "const require": {
+        "prefix": "rr",
+        "body": [
+            "const $1 = require('$1')$2"
+        ],
+        "description": "const require"
+    },
+    "module.exports": {
+        "prefix": "mode",
+        "body": [
+            "module.exports = $0"
+        ],
+        "description": "module.exports"
+    },
+    "use strict": {
+        "prefix": "us",
+        "body": [
+            "'use strict';\n"
+        ],
+        "description": "use strict"
+    },
+    "lambda": {
+        "prefix": "lll",
+        "body": [
+            "($1) => $2"
+        ],
+        "description": "lambda"
+    },
+    "lambda e": {
+        "prefix": "lle",
+        "body": [
+            "(e) => $1"
+        ],
+        "description": "lambda e"
+    },
+    "lambda +": {
+        "prefix": "ll",
+        "body": [
+            "($1) => {",
+            "\t$2",
+            "}"
+        ],
+        "description": "lambda +"
+    },
+    "lambda promise": {
+        "prefix": "llp",
+        "body": [
+            "(${1:doc}) => {",
+            "\t$2",
+            "}).catch((e) => {",
+            "\t$3",
+            "}"
+        ],
+        "description": "lambda promise"
+    },
+    "new promise": {
+        "prefix": "pp",
+        "body": [
+            "new Promise((resolve, reject) => {",
+            "\t$1",
+            "})"
+        ],
+        "description": "new promise"
+    },
+    "lambda req res": {
+        "prefix": "lr",
+        "body": [
+            "(req, res) => {",
+            "\t$1",
+            "}"
+        ],
+        "description": "lambda req res"
+    },
+    "lambda req res next": {
+        "prefix": "lrn",
+        "body": [
+            "(req, res, next) => {",
+            "\t$1",
+            "}"
+        ],
+        "description": "lambda req res nex"
+    },
+    "export default": {
+        "prefix": "ed",
+        "body": [
+            "export default $1"
+        ],
+        "description": "export default"
+    },
+    "import $1 from $1": {
+        "prefix": "ii",
+        "body": [
+            "import $1 from '$1'"
+        ],
+        "description": "import $1 from $1"
+    },
+    "import from": {
+        "prefix": "iii",
+        "body": [
+            "import $2 from '$1'"
+        ],
+        "description": "import from"
+    },
+    "class constructor": {
+        "prefix": "ctor",
+        "body": [
+            "constructor($1) {\n\t$0\n}"
+        ],
+        "description": "class constructor"
+    },
+    "describe": {
+        "prefix": "ds",
+        "body": [
+            "describe('$1', () => {",
+            "\t$2",
+            "})"
+        ],
+        "description": "describe"
+    },
+    "<div></div>": {
+        "prefix": "dd",
+        "body": [
+            "<div>$1</div>"
+        ],
+        "description": "<div></div>"
+    },
+    "import React": {
+        "prefix": "ri",
+        "body": [
+            "import React from 'react'"
+        ],
+        "description": "import React"
+    },
+    "import React, { PropTypes }": {
+        "prefix": "rip",
+        "body": [
+            "import React, { PropTypes } from 'react'"
+        ],
+        "description": "import React, { PropTypes }"
+    },
+    "react ctor": {
+        "prefix": "rctor",
+        "body": [
+            "constructor(props) {",
+            "\tsuper(props)",
+            "\tthis.state = {$1}",
+            "}"
+        ],
+        "description": "react ctor"
+    },
+    "<$1 />": {
+        "prefix": "cmp",
+        "body": [
+            "<$1 />"
+        ],
+        "description": "<$1 />"
+    },
+    "react render": {
+        "prefix": "rrr",
+        "body": [
+            "render() {",
+            "\treturn (",
+            "\t\t<div>",
+            "\t\t\t$1",
+            "\t\t</div>",
+            "\t)",
+            "}"
+        ],
+        "description": "react render"
+    },
+    "react function render": {
+        "prefix": "rfr",
+        "body": [
+            "function $1($2) {",
+            "\treturn (",
+            "\t\t<div>",
+            "\t\t\t$3",
+            "\t\t</div>",
+            "\t)",
+            "}"
+        ],
+        "description": "react function render"
+    },
+    "react class component": {
+        "prefix": "rcc",
+        "body": [
+            "class $1 extends React.Component {",
+            "\t$2",
+            "}"
+        ],
+        "description": "react class component"
+    },
+    "react ref": {
+        "prefix": "rref",
+        "body": [
+            "{(input) => { this.$1 = input }}"
+        ],
+        "description": "react ref"
+    },
+    "export from": {
+        "prefix": "ef",
+        "body": [
+            "export $2 from '$1'"
+        ],
+        "description": "export from"
+    },
+    "handle function event": {
+        "prefix": "he",
+        "body": [
+            "${1:handle}(${2:e}) {",
+            "\te.preventDefault()",
+            "\t$3",
+            "}"
+        ],
+        "description": "handle function event"
+    }
+}

@@ -1,0 +1,122 @@
+{
+    /*
+	 // Place your snippets for TypeScript here. Each snippet is defined under a snippet name and has a prefix, body and
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+    "Print to console": {
+        "prefix": "cw",
+        "body": [
+            "console.log($1)${2:;}"
+        ],
+        "description": "Log output to console"
+    },
+    "iife": {
+        "prefix": "iife",
+        "body": [
+            "(function () {",
+            "\t'use strict';\n",
+            "\t$1",
+            "}());"
+        ],
+        "description": "Immediately-invoked function expression"
+    },
+    "fun": {
+        "prefix": "fun",
+        "body": [
+            "function ($1) {",
+            "\t$2",
+            "}"
+        ],
+        "description": "no named function"
+    },
+    "named function": {
+        "prefix": "func",
+        "body": [
+            "function $1($2) {",
+            "\t$3",
+            "}"
+        ],
+        "description": "named function"
+    },
+    "require": {
+        "prefix": "req",
+        "body": [
+            "require('$1')$2"
+        ],
+        "description": "require"
+    },
+    "module.exports": {
+        "prefix": "me",
+        "body": [
+            "module.exports = $0"
+        ],
+        "description": "module.exports"
+    },
+    "use strict": {
+        "prefix": "us",
+        "body": [
+            "'use strict';\n"
+        ],
+        "description": "use strict"
+    },
+    "lambda": {
+        "prefix": "ll",
+        "body": [
+            "($1) => {$2}"
+        ],
+        "description": "lambda"
+    },
+    "lambda req res": {
+        "prefix": "lr",
+        "body": [
+            "(req, res) => {$2}"
+        ],
+        "description": "lambda req res"
+    },
+    "lambda req res next": {
+        "prefix": "lrn",
+        "body": [
+            "(req, res, next) => {$2}"
+        ],
+        "description": "lambda req res nex"
+    },
+    "export default": {
+        "prefix": "ed",
+        "body": [
+            "export default $1"
+        ],
+        "description": "export default"
+    },
+    "export class": {
+        "prefix": "ec",
+        "body": [
+            "export class $1"
+        ],
+        "description": "export class"
+    },
+    "class constructor": {
+        "prefix": "con",
+        "body": [
+            "constructor($1) {\n\t$0\n}"
+        ],
+        "description": "class constructor"
+    },
+    // angular
+    "$scope": {
+        "prefix": "ngs",
+        "body": [
+            "$scope"
+        ],
+        "description": "ng scope"
+    }
+}

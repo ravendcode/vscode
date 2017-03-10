@@ -1,0 +1,31 @@
+// Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию.
+{
+  "editor.fontSize": 18,
+  "files.trimTrailingWhitespace": true,
+  "editor.renderWhitespace": "all",
+  "editor.renderIndentGuides": true,
+  "editor.tabSize": 4,
+  "editor.minimap.enabled": true,
+  "files.eol": "\n",
+"window.zoomLevel": 0,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/*.meta": true,
+    "**/Temp": true,
+    "**/ProjectSettings": true,
+    "**/Library": true,
+    "**/.DS_Store": true
+  },
+  "code-runner.executorMap": {
+    "go": "go install"
+  },
+"files.associations": {
+    "*.tpl": "html",
+    "*.hbs": "handlebars",
+    "*.js": "javascriptreact"
+},
+  "workbench.colorTheme": "One Monokai",
+  "workbench.iconTheme": "vscode-great-icons"
+}

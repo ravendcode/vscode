@@ -1,0 +1,61 @@
+{
+/*
+	 // Place your snippets for Go here. Each snippet is defined under a snippet name and has a prefix, body and
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+
+	"Println to console": {
+		"prefix": "pl",
+		"body": [
+			"println($1)"
+		],
+		"description": "Output to console"
+	},
+	"FMT Println to console": {
+		"prefix": "fpl",
+		"body": [
+			"fmt.Println($1)"
+		],
+		"description": "FMT Output to console"
+	},
+	"LOG Println to console": {
+		"prefix": "lpl",
+		"body": [
+			"log.Println($1)"
+		],
+		"description": "LOG Println to console"
+	},
+	"FMT Sprintf string": {
+		"prefix": "fs",
+		"body": [
+			"fmt.Sprintf(\"$1\")"
+		],
+		"description": "FMT Sprintf string"
+	},
+	"ResponseWriter Request HandlerFunc": {
+		"prefix": "wrn",
+		"body": [
+			"w http.ResponseWriter, r *http.Request, next http.HandlerFunc"
+		],
+		"description": "ResponseWriter Request HandlerFunc"
+	},
+	"ResponseWriter Request": {
+		"prefix": "wr",
+		"body": [
+			"w http.ResponseWriter, r *http.Request"
+		],
+		"description": "ResponseWriter Request"
+	}
+}
+
+
