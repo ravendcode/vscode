@@ -55,17 +55,10 @@
         ],
         "description": "named function"
     },
-    "require": {
-        "prefix": "rrq",
-        "body": [
-            "const $2 = require('$1')"
-        ],
-        "description": "require"
-    },
     "const require": {
         "prefix": "rr",
         "body": [
-            "const $1 = require('$1')$2"
+            "const $1 = require('$1');"
         ],
         "description": "const require"
     },
@@ -147,7 +140,7 @@
     "export default": {
         "prefix": "ed",
         "body": [
-            "export default $1"
+            "export default $1;"
         ],
         "description": "export default"
     },
@@ -156,12 +149,12 @@
         "body": [
             "import $1 from '$1'"
         ],
-        "description": "import $1 from $1"
+        "description": "import $1 from $1;"
     },
     "import from": {
         "prefix": "iii",
         "body": [
-            "import $2 from '$1'"
+            "import $2 from '$1';"
         ],
         "description": "import from"
     },
@@ -177,7 +170,7 @@
         "body": [
             "describe('$1', () => {",
             "\t$2",
-            "})"
+            "});"
         ],
         "description": "describe"
     },
@@ -191,14 +184,14 @@
     "import React": {
         "prefix": "ri",
         "body": [
-            "import React from 'react'"
+            "import React from 'react';"
         ],
         "description": "import React"
     },
     "import React, { PropTypes }": {
         "prefix": "rip",
         "body": [
-            "import React, { PropTypes } from 'react'"
+            "import React, { PropTypes } from 'react';"
         ],
         "description": "import React, { PropTypes }"
     },
@@ -206,8 +199,8 @@
         "prefix": "rctor",
         "body": [
             "constructor(props) {",
-            "\tsuper(props)",
-            "\tthis.state = {$1}",
+            "\tsuper(props);",
+            "\tthis.state = {$1};",
             "}"
         ],
         "description": "react ctor"
@@ -227,7 +220,7 @@
             "\t\t<div>",
             "\t\t\t$1",
             "\t\t</div>",
-            "\t)",
+            "\t);",
             "}"
         ],
         "description": "react render"
@@ -240,7 +233,7 @@
             "\t\t<div>",
             "\t\t\t$3",
             "\t\t</div>",
-            "\t)",
+            "\t);",
             "}"
         ],
         "description": "react function render"
@@ -264,7 +257,7 @@
     "export from": {
         "prefix": "ef",
         "body": [
-            "export $2 from '$1'"
+            "export $2 from '$1';"
         ],
         "description": "export from"
     },
@@ -272,7 +265,7 @@
         "prefix": "he",
         "body": [
             "${1:handle}(${2:e}) {",
-            "\te.preventDefault()",
+            "\te.preventDefault();",
             "\t$3",
             "}"
         ],

@@ -40,5 +40,12 @@
       "</html>"
     ],
     "description": "html5"
+  },
+  "ng tepmplate": {
+    "prefix": "nn",
+    "body": [
+      "{{$1}}"
+    ],
+    "description": "ng tepmplate"
   }
 }

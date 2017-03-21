@@ -17,7 +17,7 @@
     "Print to console": {
         "prefix": "cw",
         "body": [
-            "console.log($1)$2"
+            "console.log($1);"
         ],
         "description": "Log output to console"
     },
@@ -66,14 +66,14 @@
     "const require": {
         "prefix": "rr",
         "body": [
-            "const $1 = require('$1')$2"
+            "const $1 = require('$1');"
         ],
         "description": "const require"
     },
     "module.exports": {
         "prefix": "mode",
         "body": [
-            "module.exports = $0"
+            "module.exports = $0;"
         ],
         "description": "module.exports"
     },
@@ -155,14 +155,14 @@
     "import $1 from $1": {
         "prefix": "ii",
         "body": [
-            "import $1 from '$1'"
+            "import $1 from '$1';"
         ],
         "description": "import $1 from $1"
     },
     "import from": {
         "prefix": "iii",
         "body": [
-            "import $2 from '$1'"
+            "import $2 from '$1';"
         ],
         "description": "import from"
     },
@@ -178,7 +178,7 @@
         "body": [
             "describe('$1', () => {",
             "\t$2",
-            "})"
+            "});"
         ],
         "description": "describe"
     },
@@ -192,14 +192,14 @@
     "import React": {
         "prefix": "ri",
         "body": [
-            "import React from 'react'"
+            "import React from 'react';"
         ],
         "description": "import React"
     },
     "import React, { PropTypes }": {
         "prefix": "rip",
         "body": [
-            "import React, { PropTypes } from 'react'"
+            "import React, { PropTypes } from 'react';"
         ],
         "description": "import React, { PropTypes }"
     },
@@ -207,8 +207,8 @@
         "prefix": "rctor",
         "body": [
             "constructor(props) {",
-            "\tsuper(props)",
-            "\tthis.state = {$1}",
+            "\tsuper(props);",
+            "\tthis.state = {$1};",
             "}"
         ],
         "description": "react ctor"
@@ -228,7 +228,7 @@
             "\t\t<div>",
             "\t\t\t$1",
             "\t\t</div>",
-            "\t)",
+            "\t);",
             "}"
         ],
         "description": "react render"
@@ -241,7 +241,7 @@
             "\t\t<div>",
             "\t\t\t$3",
             "\t\t</div>",
-            "\t)",
+            "\t);",
             "}"
         ],
         "description": "react function render"
@@ -265,7 +265,7 @@
     "export from": {
         "prefix": "ef",
         "body": [
-            "export $2 from '$1'"
+            "export $2 from '$1';"
         ],
         "description": "export from"
     },
@@ -273,10 +273,31 @@
         "prefix": "he",
         "body": [
             "${1:handle}(${2:e}) {",
-            "\te.preventDefault()",
+            "\te.preventDefault();",
             "\t$3",
             "}"
         ],
         "description": "handle function event"
+    },
+    "ng controllerAs": {
+        "prefix": "ncav",
+        "body": [
+            "controllerAs: 'vm',"
+        ],
+        "description": "ng controllerAs"
+    },
+    "ng viewmodel": {
+        "prefix": "nvm",
+        "body": [
+            "let vm = this;"
+        ],
+        "description": "ng viewmodel"
+    },
+    "ng $$ngIsClass": {
+        "prefix": "nic",
+        "body": [
+            "$1.$$$ngIsClass = true;"
+        ],
+        "description": "ng $$ngIsClass"
     }
 }

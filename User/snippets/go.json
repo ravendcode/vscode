@@ -28,12 +28,19 @@
 		],
 		"description": "FMT Output to console"
 	},
-	"LOG Println to console": {
+	"fmt println to console": {
+		"prefix": "cw",
+		"body": [
+			"fmt.Println($1)"
+		],
+		"description": "fmt output to console"
+	},
+	"Log Println to console": {
 		"prefix": "lpl",
 		"body": [
 			"log.Println($1)"
 		],
-		"description": "LOG Println to console"
+		"description": "Log Println to console"
 	},
 	"FMT Sprintf string": {
 		"prefix": "fs",
@@ -41,6 +48,20 @@
 			"fmt.Sprintf(\"$1\")"
 		],
 		"description": "FMT Sprintf string"
+	},
+	"FMT Printf string": {
+		"prefix": "fpf",
+		"body": [
+			"fmt.Printf(\"$1\")"
+		],
+		"description": "FMT Printf string"
+	},
+	"type struct{}": {
+		"prefix": "ts",
+		"body": [
+			"type $1 struct"
+		],
+		"description": "type struct{}"
 	},
 	"ResponseWriter Request HandlerFunc": {
 		"prefix": "wrn",

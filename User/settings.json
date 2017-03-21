@@ -18,14 +18,16 @@
     "**/Library": true,
     "**/.DS_Store": true
   },
-  "code-runner.executorMap": {
-    "go": "go install"
-  },
+  "code-runner.executorMap": {},
   "files.associations": {
     "*.tpl": "html",
     "*.hbs": "handlebars",
     "*.js": "javascriptreact"
   },
-  "workbench.colorTheme": "One Monokai",
+  "emmet.syntaxProfiles": {
+    "js": "html",
+    "postcss": "css"
+  },
+  "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "vscode-great-icons"
 }
