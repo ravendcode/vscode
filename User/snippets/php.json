@@ -41,5 +41,32 @@
             "var_dump($1);$2"
         ],
         "description": "var_dump()"
+    },
+    "public function": {
+        "prefix": "pubf",
+        "body": [
+            "public function $1($2)",
+            "{",
+            "\t$3",
+            "}"
+        ],
+        "description": "public function"
+    },
+    "public function action": {
+        "prefix": "pubfa",
+        "body": [
+            "public function action$1($2)",
+            "{",
+            "\t$3",
+            "}"
+        ],
+        "description": "public function action"
+    },
+    "$this->": {
+        "prefix": "this",
+        "body": [
+            "$$this->$1"
+        ],
+        "description": "$this->"
     }
 }

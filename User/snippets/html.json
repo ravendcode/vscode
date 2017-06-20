@@ -41,11 +41,64 @@
     ],
     "description": "html5"
   },
-  "ng tepmplate": {
-    "prefix": "nn",
+  "jinja {{}}": {
+    "prefix": "jj",
     "body": [
-      "{{$1}}"
+      "{{ $1 }}"
     ],
-    "description": "ng tepmplate"
+    "description": "jinja {{}}"
+  },
+  "jinja %": {
+    "prefix": "ji",
+    "body": [
+      "{% $1 %}"
+    ],
+    "description": "jinja %"
+  },
+  "jinja if": {
+    "prefix": "jif",
+    "body": [
+      "{% if $1 %}",
+      "\t$2",
+      "{% endif %}"
+    ],
+    "description": "jinja if"
+  },
+  "jinja title": {
+    "prefix": "jt",
+    "body": [
+      "{% block title %}$1{% endblock %}"
+    ],
+    "description": "jinja title"
+  },
+  "jinja block": {
+    "prefix": "jb",
+    "body": [
+      "{% block ${1:content} %}",
+      "\t$2",
+      "{% endblock %}"
+    ],
+    "description": "jinja block"
+  },
+  "jinja extends": {
+    "prefix": "je",
+    "body": [
+      "{% extends '${1:base.html}' %}"
+    ],
+    "description": "jinja extends"
+  },
+  "jinja token": {
+    "prefix": "jtoken",
+    "body": [
+      "{% csrf_token %}"
+    ],
+    "description": "jinja token"
+  },
+  "jinja url": {
+    "prefix": "ju",
+    "body": [
+      "{% url '$1' %}"
+    ],
+    "description": "jinja url"
   }
 }
