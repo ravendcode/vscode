@@ -16,7 +16,7 @@
     "Print to console": {
         "prefix": "cw",
         "body": [
-            "console.log($1)$2"
+            "console.log($1);"
         ],
         "description": "Log output to console"
     },
@@ -140,14 +140,14 @@
     "export default": {
         "prefix": "ed",
         "body": [
-            "export default $1;"
+            "export default $1"
         ],
         "description": "export default"
     },
     "import $1 from $1": {
         "prefix": "ii",
         "body": [
-            "import $1 from '$1'"
+            "import $1 from '$1';"
         ],
         "description": "import $1 from $1;"
     },

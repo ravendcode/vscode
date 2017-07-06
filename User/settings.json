@@ -22,22 +22,16 @@
   "files.associations": {
     "*.tpl": "html",
     "*.hbs": "handlebars",
-    "*.js": "javascriptreact"
+    "*.js": "javascript",
+    "*.html": "html"
   },
   "emmet.syntaxProfiles": {
     "js": "html",
     "postcss": "css"
   },
-  "workbench.colorTheme": "Atom One Dark",
-  "workbench.iconTheme": "vscode-great-icons",
   "phpformatter.composer": true,
   "extensions.ignoreRecommendations": true,
   "python.linting.enabled": false,
-  "php-cs-fixer.executablePath": "php-cs-fixer",
-  "php-cs-fixer.onsave": false,
-  "php-cs-fixer.rules": "@PSR2",
-  "php-cs-fixer.config": ".php_cs",
-  "php-cs-fixer.autoFixByBracket": true,
-  "php-cs-fixer.autoFixBySemicolon": false,
-  "php-cs-fixer.formatHtml": false
+  "workbench.iconTheme": "ayu",
+  "workbench.colorTheme": "One Monokai"
 }
