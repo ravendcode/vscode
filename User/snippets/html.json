@@ -110,19 +110,19 @@
         ],
         "description": "jinja token"
     },
-    "jinja url": {
-        "prefix": "ju",
-        "body": [
-            "{% url '$1' %}"
-        ],
-        "description": "jinja url"
-    },
     "jinja url_for": {
-        "prefix": "url",
+        "prefix": "ju",
         "body": [
             "{{ url_for('$1') }}"
         ],
         "description": "jinja url_for"
+    },
+    "django url": {
+        "prefix": "url",
+        "body": [
+            "{% url '$1' %}"
+        ],
+        "description": "django url"
     },
     "jinja for": {
         "prefix": "jfor",
@@ -168,5 +168,21 @@
             "#!/usr/bin/env php"
         ],
         "description": "php bash"
+    },
+    "go define title": {
+        "prefix": "deft",
+        "body": [
+            "{{define \"${1:title}\"}}$2{{end}}"
+        ],
+        "description": "go define title"
+    },
+    "go define body": {
+        "prefix": "def",
+        "body": [
+            "{{define \"${1:body}\"}}",
+            "\t$2",
+            "{{end}}"
+        ],
+        "description": "go define body"
     }
 }

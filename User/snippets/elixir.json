@@ -22,5 +22,12 @@
 			"end"
 		],
 		"description": "def snippet"
+	},
+	"IO.puts": {
+		"prefix": "cw",
+		"body": [
+			"IO.puts($1)"
+		],
+		"description": "IO.puts"
 	}
 }

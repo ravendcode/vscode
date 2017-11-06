@@ -20,6 +20,20 @@
         ],
         "description": "echo PHP_EOL"
     },
+    "$this->": {
+        "prefix": "tt",
+        "body": [
+            "$$this->"
+        ],
+        "description": "$this->"
+    },
+    "symfony render twig": {
+        "prefix": "sr",
+        "body": [
+            "return $$this->render('$1.html.twig');"
+        ],
+        "description": "symfony render twig"
+    },
     "alias eln": {
         "prefix": "cw",
         "body": [
@@ -40,6 +54,23 @@
             "var_dump($1);"
         ],
         "description": "var_dump()"
+    },
+    "alias var_dump()": {
+        "prefix": "vv",
+        "body": [
+            "var_dump($1);"
+        ],
+        "description": "alias var_dump()"
+    },
+    "function": {
+        "prefix": "ff",
+        "body": [
+            "function $1($2)",
+            "{",
+            "\t$3",
+            "}"
+        ],
+        "description": "function"
     },
     "public function": {
         "prefix": "pubf",
@@ -74,7 +105,7 @@
     "public function action": {
         "prefix": "pubfa",
         "body": [
-            "public function action$1($2)",
+            "public function $1Action($2)",
             "{",
             "\t$3",
             "}"

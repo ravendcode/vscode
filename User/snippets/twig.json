@@ -1,0 +1,192 @@
+{
+	/*
+		// Place your snippets for HTML (Twig) here. Each snippet is defined under a snippet name and has a prefix, body and
+		// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+		// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+		// same ids are connected.
+		// Example:
+		"Print to console": {
+			"prefix": "log",
+			"body": [
+				"console.log('$1');",
+				"$2"
+			],
+			"description": "Log output to console"
+		}
+	*/
+	"{{}}": {
+		"prefix": "nn",
+		"body": [
+			"{{$1}}$2"
+		],
+		"description": "ng print"
+	},
+	"html5": {
+		"prefix": "html5",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"ru\">",
+			"<head>",
+			"\t<meta charset=\"utf-8\">",
+			"\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+			"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">",
+			"\t<meta name=\"description\" content=\"\">",
+			"\t<meta name=\"keywords\" content=\"\">",
+			"\t<meta name=\"robots\" content=\"all\">",
+			"\t<title>{% block title %}$1{% endblock %}</title>",
+			"\t{% block stylesheets %}{% endblock %}",
+			"</head>",
+			"<body>",
+			"\t$2",
+			"\t{% block body %}{% endblock %}",
+			"\t{% block javascripts %}{% endblock %}",
+			"</body>",
+			"</html>"
+		],
+		"description": "html5"
+	},
+	"jinja {{}}": {
+		"prefix": "jj",
+		"body": [
+			"{{ $1 }}"
+		],
+		"description": "jinja {{}}"
+	},
+	"jinja %": {
+		"prefix": "ji",
+		"body": [
+			"{% $1 %}"
+		],
+		"description": "jinja %"
+	},
+	"jinja if": {
+		"prefix": "jif",
+		"body": [
+			"{% if $1 %}",
+			"\t$2",
+			"{% endif %}"
+		],
+		"description": "jinja if"
+	},
+	"jinja title": {
+		"prefix": "jt",
+		"body": [
+			"{% block title %}$1{% endblock %}"
+		],
+		"description": "jinja title"
+	},
+	"jinja block inline": {
+		"prefix": "jbl",
+		"body": [
+			"{% block ${1:body} %}$2{% endblock %}"
+		],
+		"description": "jinja block inline"
+	},
+	"jinja block": {
+		"prefix": "jb",
+		"body": [
+			"{% block ${1:body} %}",
+			"\t$2",
+			"{% endblock %}"
+		],
+		"description": "jinja block"
+	},
+	"jinja macro": {
+		"prefix": "jm",
+		"body": [
+			"{% macro $1 %}",
+			"\t$2",
+			"{% endmacro %}"
+		],
+		"description": "jinja macro"
+	},
+	"jinja extends": {
+		"prefix": "je",
+		"body": [
+			"{% extends '${1:base.html.twig}' %}"
+		],
+		"description": "jinja extends"
+	},
+	"jinja token": {
+		"prefix": "jtoken",
+		"body": [
+			"{{ form.csrf_token }}"
+		],
+		"description": "jinja token"
+	},
+	"jinja url_for": {
+		"prefix": "ju",
+		"body": [
+			"{{ url_for('$1') }}"
+		],
+		"description": "jinja url_for"
+	},
+	"django url": {
+		"prefix": "url",
+		"body": [
+			"{% url '$1' %}"
+		],
+		"description": "django url"
+	},
+	"jinja for": {
+		"prefix": "jfor",
+		"body": [
+			"{% for $1 in $2 %}",
+			"\t$3",
+			"{% endfor %}"
+		],
+		"description": "jinja for"
+	},
+	"jinja include": {
+		"prefix": "jin",
+		"body": [
+			"{% include '$1' %}"
+		],
+		"description": "jinja include"
+	},
+	"jinja if inline": {
+		"prefix": "jifl",
+		"body": [
+			"{% if field.errors %} has-error{% endif %}"
+		],
+		"description": "jinja if inline"
+	},
+	"<?php": {
+		"prefix": "ph",
+		"body": [
+			"<?php",
+			"$1"
+		],
+		"description": "<?php"
+	},
+	"<?php ?>": {
+		"prefix": "php",
+		"body": [
+			"<?php $1 ?>$2"
+		],
+		"description": "<?php ?>"
+	},
+	"php bash": {
+		"prefix": "phpb",
+		"body": [
+			"#!/usr/bin/env php"
+		],
+		"description": "php bash"
+	},
+	"go define title": {
+		"prefix": "deft",
+		"body": [
+			"{{define \"${1:title}\"}}$2{{end}}"
+		],
+		"description": "go define title"
+	},
+	"go define body": {
+		"prefix": "def",
+		"body": [
+			"{{define \"${1:body}\"}}",
+			"\t$2",
+			"{{end}}"
+		],
+		"description": "go define body"
+	}
+}

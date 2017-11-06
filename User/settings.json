@@ -18,7 +18,9 @@
     "**/Library": true,
     "**/.DS_Store": true
   },
-  "code-runner.executorMap": {},
+  "code-runner.executorMap": {
+    "elixir": "elixir"
+  },
   "files.associations": {
     "*.tpl": "html",
     "*.hbs": "handlebars",
@@ -29,9 +31,21 @@
     "js": "html",
     "postcss": "css"
   },
-  "phpformatter.composer": true,
+  "emmet.includeLanguages": {
+    "twig": "html",
+    "erb": "html"
+  },
   "extensions.ignoreRecommendations": true,
   "python.linting.enabled": false,
   "workbench.iconTheme": "ayu",
-  "workbench.colorTheme": "One Monokai"
+  "phpformatter.composer": true,
+  "workbench.colorTheme": "Ayu Mirage",
+  // php
+  "php.suggest.basic": true,
+  // Enable/disable built-in PHP validation.
+  "php.validate.enable": true,
+  // Points to the PHP executable.
+  "php.validate.executablePath": "D:/Servers/xampp/php/php.exe",
+  // Whether the linter is run on save or on type.
+  "php.validate.run": "onSave"
 }
