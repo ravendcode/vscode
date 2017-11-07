@@ -39,13 +39,8 @@
   "python.linting.enabled": false,
   "workbench.iconTheme": "ayu",
   "phpformatter.composer": true,
-  "workbench.colorTheme": "Ayu Mirage",
-  // php
   "php.suggest.basic": true,
-  // Enable/disable built-in PHP validation.
   "php.validate.enable": true,
-  // Points to the PHP executable.
-  "php.validate.executablePath": "D:/Servers/xampp/php/php.exe",
-  // Whether the linter is run on save or on type.
-  "php.validate.run": "onSave"
+  "php.validate.run": "onSave",
+  "workbench.colorTheme": "Ayu Mirage"
 }
