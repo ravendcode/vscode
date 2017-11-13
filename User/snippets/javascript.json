@@ -62,8 +62,15 @@
         ],
         "description": "const require"
     },
+    "require": {
+        "prefix": "req",
+        "body": [
+            "require('$1');"
+        ],
+        "description": "require"
+    },
     "module.exports": {
-        "prefix": "mode",
+        "prefix": "me",
         "body": [
             "module.exports = $0"
         ],
@@ -77,7 +84,7 @@
         "description": "use strict"
     },
     "lambda": {
-        "prefix": "lll",
+        "prefix": "ll",
         "body": [
             "($1) => $2"
         ],
@@ -91,7 +98,7 @@
         "description": "lambda e"
     },
     "lambda +": {
-        "prefix": "ll",
+        "prefix": "lll",
         "body": [
             "($1) => {",
             "\t$2",

@@ -1,13 +1,16 @@
 // Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию.
 {
   "editor.fontSize": 18,
-  "files.trimTrailingWhitespace": true,
   "editor.renderWhitespace": "all",
   "editor.renderIndentGuides": true,
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "editor.minimap.enabled": true,
-  "files.eol": "\n",
+  "editor.wordWrap": "on",
+  "editor.snippetSuggestions": "top",
   "window.zoomLevel": 0,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -33,14 +36,16 @@
   },
   "emmet.includeLanguages": {
     "twig": "html",
-    "erb": "html"
+    "erb": "html",
+    "laravel-blade": "html"
   },
   "extensions.ignoreRecommendations": true,
   "python.linting.enabled": false,
-  "workbench.iconTheme": "ayu",
   "phpformatter.composer": true,
   "php.suggest.basic": true,
   "php.validate.enable": true,
   "php.validate.run": "onSave",
-  "workbench.colorTheme": "Ayu Mirage"
+  "newFile.defaultFileExtension": ".js",
+  "workbench.colorTheme": "Atom Material Theme",
+  "workbench.iconTheme": "vscode-great-icons"
 }

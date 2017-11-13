@@ -17,7 +17,7 @@
     "blade extends": {
         "prefix": "ext",
         "body": [
-            "@extends('${1:layouts.base}')"
+            "@extends('${1:layouts.app}')"
         ],
         "description": "blade extends"
     },
@@ -38,7 +38,7 @@
         "description": "blade unless"
     },
     "blade foreach": {
-        "prefix": "for",
+        "prefix": "foreach",
         "body": [
             "@foreach ($1)",
 			"\t$2",
@@ -87,7 +87,7 @@
         "description": "blade section"
     },
     "blade section title": {
-        "prefix": "t",
+        "prefix": "sect",
         "body": [
             "@section('${1:title}', '$2')"
         ],
