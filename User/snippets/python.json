@@ -91,11 +91,18 @@
 		"description": "class form"
 	},
 	"return": {
-		"prefix": "rr",
+		"prefix": "r",
 		"body": [
 			"return"
 		],
 		"description": "return"
+	},
+	"request": {
+		"prefix": "req",
+		"body": [
+			"request"
+		],
+		"description": "request"
 	},
 	"main": {
 		"prefix": "main",

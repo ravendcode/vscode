@@ -147,28 +147,28 @@
         ],
         "description": "jinja if inline"
     },
-    "<?php": {
-        "prefix": "ph",
-        "body": [
-            "<?php",
-            "$1"
-        ],
-        "description": "<?php"
-    },
-    "<?php ?>": {
-        "prefix": "php",
-        "body": [
-            "<?php $1 ?>$2"
-        ],
-        "description": "<?php ?>"
-    },
-    "php bash": {
-        "prefix": "phpb",
-        "body": [
-            "#!/usr/bin/env php"
-        ],
-        "description": "php bash"
-    },
+    // "<?php": {
+    //     "prefix": "ph",
+    //     "body": [
+    //         "<?php",
+    //         "$1"
+    //     ],
+    //     "description": "<?php"
+    // },
+    // "<?php ?>": {
+    //     "prefix": "php",
+    //     "body": [
+    //         "<?php $1 ?>$2"
+    //     ],
+    //     "description": "<?php ?>"
+    // },
+    // "php bash": {
+    //     "prefix": "phpb",
+    //     "body": [
+    //         "#!/usr/bin/env php"
+    //     ],
+    //     "description": "php bash"
+    // },
     "go define title": {
         "prefix": "deft",
         "body": [

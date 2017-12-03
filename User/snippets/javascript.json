@@ -20,6 +20,13 @@
         ],
         "description": "Log output to console"
     },
+    "console.error": {
+        "prefix": "ce",
+        "body": [
+            "console.error(${1:e});"
+        ],
+        "description": "console.error"
+    },
     "#!/usr/bin/env node": {
         "prefix": "benv",
         "body": [
@@ -36,6 +43,15 @@
             "}());"
         ],
         "description": "Immediately-invoked function expression"
+    },
+    "aiife": {
+        "prefix": "aiife",
+        "body": [
+            "(async () => {",
+            "\t$1",
+            "})();"
+        ],
+        "description": "Async immediately-invoked function expression"
     },
     "fun": {
         "prefix": "fl",
@@ -56,11 +72,57 @@
         "description": "named function"
     },
     "const require": {
-        "prefix": "rr",
+        "prefix": "cr",
         "body": [
             "const $1 = require('$1');"
         ],
         "description": "const require"
+    },
+    "const": {
+        "prefix": "c",
+        "body": [
+            "const $1"
+        ],
+        "description": "const"
+    },
+    "exports": {
+        "prefix": "ex",
+        "body": [
+            "exports.$1"
+        ],
+        "description": "exports"
+    },
+    "return": {
+        "prefix": "r",
+        "body": [
+            "return"
+        ],
+        "description": "return"
+    },
+    "async": {
+        "prefix": "as",
+        "body": [
+            "async "
+        ],
+        "description": "async"
+    },
+    "await": {
+        "prefix": "aw",
+        "body": [
+            "await "
+        ],
+        "description": "await"
+    },
+    "trycatch(e)": {
+        "prefix": "trye",
+        "body": [
+            "try {",
+            "\t$2",
+            "} catch (e) {",
+            "\t$1",
+            "}"
+        ],
+        "description": "trycatch(e)"
     },
     "require": {
         "prefix": "req",
