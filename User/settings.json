@@ -33,27 +33,23 @@
   "emmet.triggerExpansionOnTab": true,
   "emmet.syntaxProfiles": {
     "js": "html",
-    "postcss": "css"
+    "postcss": "css",
   },
   "emmet.includeLanguages": {
     "twig": "html",
     "erb": "html",
     "laravel-blade": "html",
     "javascript": "html",
-    "vue-html": "html"
+    "vue-html": "html",
+    "postcss": "css",
   },
   "extensions.ignoreRecommendations": true,
   "phpformatter.composer": true,
   "php.suggest.basic": true,
   "php.validate.enable": true,
   "php.validate.run": "onSave",
-  "newFile.defaultFileExtension": ".js",
   "explorer.confirmDelete": true,
   "explorer.confirmDragAndDrop": true,
-  "csharp.referencesCodeLens.enabled": false,
   "workbench.iconTheme": "vscode-great-icons",
-  "workbench.colorTheme": "Atom Material Theme",
-  "csharpfixformat.style.spaces.beforeParenthesis": false,
-  "csharpfixformat.style.braces.onSameLine": false,
-  "csharp.format.enable": false
+  "workbench.colorTheme": "Atom One Dark"
 }

@@ -257,12 +257,26 @@
         ],
         "description": "import React"
     },
-    "import React, { PropTypes }": {
+    "import PropTypes": {
         "prefix": "rip",
         "body": [
-            "import React, { PropTypes } from 'react';"
+            "import PropTypes from 'prop-types';"
         ],
-        "description": "import React, { PropTypes }"
+        "description": "import PropTypes"
+    },
+    "set propTypes": {
+        "prefix": "rsp",
+        "body": [
+            "$1.propTypes = {$2};"
+        ],
+        "description": "set propTypes"
+    },
+    "set static propTypes": {
+        "prefix": "rssp",
+        "body": [
+            "static propTypes = {$1}"
+        ],
+        "description": "set static propTypes"
     },
     "react ctor": {
         "prefix": "rctor",
@@ -275,7 +289,7 @@
         "description": "react ctor"
     },
     "<$1 />": {
-        "prefix": "cmp",
+        "prefix": "rv",
         "body": [
             "<$1 />"
         ],
@@ -323,6 +337,27 @@
         ],
         "description": "react ref"
     },
+    "react set state": {
+        "prefix": "rss",
+        "body": [
+            "this.setState({$1})"
+        ],
+        "description": "react set state"
+    },
+    "react get state": {
+        "prefix": "rs",
+        "body": [
+            "this.state.$1"
+        ],
+        "description": "react get state"
+    },
+    "react get props": {
+        "prefix": "rp",
+        "body": [
+            "this.props.$1"
+        ],
+        "description": "react get props"
+    },
     "export from": {
         "prefix": "ef",
         "body": [
@@ -339,5 +374,23 @@
             "}"
         ],
         "description": "handle function event"
-    }
+    },
+    "vue html object": {
+		"prefix": "oo",
+		"body": [
+			"{ $1 }"
+		]
+	},
+    "eslint disable": {
+		"prefix": "esld",
+		"body": [
+			"/* eslint-disable ${1:no-console} */"
+		]
+	},
+    "import": {
+		"prefix": "im",
+		"body": [
+			"import $2 from '$1';"
+		]
+	}
 }
