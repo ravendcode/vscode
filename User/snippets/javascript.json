@@ -234,14 +234,21 @@
         ],
         "description": "class constructor"
     },
-    "describe": {
-        "prefix": "ds",
+    "mocha describe": {
+        "prefix": "des",
         "body": [
             "describe('$1', () => {",
             "\t$2",
             "});"
-        ],
-        "description": "describe"
+        ]
+    },
+    "mocha it": {
+        "prefix": "it",
+        "body": [
+            "it('$1', () => {",
+            "\t$2",
+            "});"
+        ]
     },
     "<div></div>": {
         "prefix": "dd",

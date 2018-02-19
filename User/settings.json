@@ -1,6 +1,13 @@
 // Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию.
 {
-  "editor.fontSize": 19,
+  "editor.fontFamily": "Operator Mono",
+  "editor.fontLigatures": true,
+  "editor.tokenColorCustomizations": {
+    "keywords": {
+      "fontStyle": "italic"
+    }
+  },
+  "editor.fontSize": 18,
   "editor.renderWhitespace": "all",
   "editor.renderIndentGuides": true,
   "editor.tabSize": 2,
@@ -51,5 +58,5 @@
   "explorer.confirmDelete": true,
   "explorer.confirmDragAndDrop": true,
   "workbench.iconTheme": "vscode-great-icons",
-  "workbench.colorTheme": "Atom One Dark"
+  "workbench.colorTheme": "One Monokai"
 }
