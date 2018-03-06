@@ -1,14 +1,15 @@
 // Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию.
 {
-  "editor.fontFamily": "Operator Mono",
+  "editor.fontFamily": "Hack",
+  "editor.lineHeight": 24,
   "editor.fontLigatures": true,
-  "editor.tokenColorCustomizations": {
-    "keywords": {
-      "fontStyle": "italic"
-    }
-  },
-  "editor.fontSize": 18,
-  "editor.renderWhitespace": "all",
+  // "editor.tokenColorCustomizations": {
+  //   "keywords": {
+  //     "fontStyle": "italic"
+  //   }
+  // },
+  "editor.fontSize": 16,
+  "editor.renderWhitespace": "boundary",
   "editor.renderIndentGuides": true,
   "editor.tabSize": 2,
   "editor.minimap.enabled": true,
@@ -46,17 +47,14 @@
     "twig": "html",
     "erb": "html",
     "laravel-blade": "html",
-    "javascript": "html",
+    // "javascript": "html",
     "vue-html": "html",
     "postcss": "css",
   },
   "extensions.ignoreRecommendations": true,
-  "phpformatter.composer": true,
-  "php.suggest.basic": true,
-  "php.validate.enable": true,
-  "php.validate.run": "onSave",
   "explorer.confirmDelete": true,
   "explorer.confirmDragAndDrop": true,
   "workbench.iconTheme": "vscode-great-icons",
-  "workbench.colorTheme": "One Monokai"
+  "workbench.colorTheme": "Ayu Mirage",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"
 }

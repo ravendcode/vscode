@@ -27,6 +27,18 @@
         ],
         "description": "console.error"
     },
+    "ctx": {
+        "prefix": "cc",
+        "body": [
+            "ctx"
+        ]
+    },
+    "ctx.body": {
+        "prefix": "ccb",
+        "body": [
+            "ctx.body = "
+        ]
+    },
     "#!/usr/bin/env node": {
         "prefix": "benv",
         "body": [
@@ -179,6 +191,42 @@
         ],
         "description": "lambda promise"
     },
+    "lambda ctx": {
+        "prefix": "lc",
+        "body": [
+            "async (ctx) => { $2 }"
+        ]
+    },
+    "lambda ctx next": {
+        "prefix": "lcn",
+        "body": [
+            "async (ctx, next) => { $2 }"
+        ]
+    },
+    "lambda ctx +": {
+        "prefix": "llc",
+        "body": [
+            "async (ctx) => {",
+            "\t$2",
+            "}"
+        ]
+    },
+    "lambda ctx + next": {
+        "prefix": "llcn",
+        "body": [
+            "async (ctx, next) => {",
+            "\t$2",
+            "}"
+        ]
+    },
+    "async ctx": {
+        "prefix": "ac",
+        "body": [
+            "async $1(ctx) {",
+            "\t$2",
+            "},"
+        ]
+    },
     "new promise": {
         "prefix": "pp",
         "body": [
@@ -245,7 +293,15 @@
     "mocha it": {
         "prefix": "it",
         "body": [
-            "it('$1', () => {",
+            "it('$1', async () => {",
+            "\t$2",
+            "});"
+        ]
+    },
+    "jest test": {
+        "prefix": "tt",
+        "body": [
+            "test('$1', async () => {",
             "\t$2",
             "});"
         ]

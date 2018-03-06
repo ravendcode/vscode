@@ -85,7 +85,7 @@
 		"description": "ResponseWriter Request"
 	},
 	"func named": {
-		"prefix": "def",
+		"prefix": "fn",
 		"body": [
 			"func ${1:main}($2) {",
 			"\t$3",
@@ -93,8 +93,28 @@
 		],
 		"description": "func named"
 	},
+	"func test": {
+		"prefix": "fnt",
+		"body": [
+			"func Test$1(t *testing.T) {",
+			"\t$2",
+			"}"
+		]
+	},
+	"return": {
+		"prefix": "r",
+		"body": [
+			"return"
+		]
+	},
+	"fmt.Errorf": {
+		"prefix": "fe",
+		"body": [
+			"fmt.Errorf(\"$1\")"
+		]
+	},
 	"struct method": {
-		"prefix": "defs",
+		"prefix": "fns",
 		"body": [
 			"func ($1) $2($3) {",
 			"\t$4",

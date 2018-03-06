@@ -31,14 +31,14 @@
 	"from import": {
 		"prefix": "ii",
 		"body": [
-			"from $1 import $2"
+			"from $1 import $1"
 		],
 		"description": "from import"
 	},
 	"from import one": {
-		"prefix": "iii",
+		"prefix": "im",
 		"body": [
-			"from $1 import $1"
+			"from $1 import $2"
 		],
 		"description": "from import one"
 	},
@@ -101,15 +101,19 @@
 		"prefix": "req",
 		"body": [
 			"request"
-		],
-		"description": "request"
+		]
+	},
+	"response": {
+		"prefix": "res",
+		"body": [
+			"response"
+		]
 	},
 	"main": {
 		"prefix": "main",
 		"body": [
 			"if __name__ == '__main__':",
 			"\t${1:pass}"
-		],
-		"description": "main"
+		]
 	}
 }
