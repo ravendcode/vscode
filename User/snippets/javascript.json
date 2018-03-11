@@ -28,13 +28,19 @@
         "description": "console.error"
     },
     "ctx": {
-        "prefix": "cc",
+        "prefix": "ct",
         "body": [
             "ctx"
         ]
     },
+    "ctx.throw()": {
+        "prefix": "ctt",
+        "body": [
+            "ctx.throw($1);"
+        ]
+    },
     "ctx.body": {
-        "prefix": "ccb",
+        "prefix": "ctb",
         "body": [
             "ctx.body = "
         ]
@@ -130,7 +136,7 @@
         "body": [
             "try {",
             "\t$2",
-            "} catch (e) {",
+            "} catch (err) {",
             "\t$1",
             "}"
         ],

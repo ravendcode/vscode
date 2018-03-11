@@ -21,6 +21,8 @@
   "files.insertFinalNewline": true,
   "files.exclude": {
     "**/.git": true,
+    "**/*.pyc": true,
+    "**/__pycache__": true,
     "**/.svn": true,
     "**/.hg": true,
     "**/*.meta": true,
@@ -36,7 +38,8 @@
     "*.tpl": "html",
     "*.hbs": "handlebars",
     "*.js": "javascript",
-    "*.html": "html"
+    "*.html": "html",
+    ".env.dist": "dotenv"
   },
   "emmet.triggerExpansionOnTab": true,
   "emmet.syntaxProfiles": {
@@ -56,5 +59,6 @@
   "explorer.confirmDragAndDrop": true,
   "workbench.iconTheme": "vscode-great-icons",
   "workbench.colorTheme": "Ayu Mirage",
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "python.linting.flake8Enabled": true
 }

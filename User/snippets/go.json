@@ -64,7 +64,7 @@
 		"description": "type struct{}"
 	},
 	"type interface{}": {
-		"prefix": "tii",
+		"prefix": "ti",
 		"body": [
 			"type $1 interface"
 		],
