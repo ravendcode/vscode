@@ -1,6 +1,6 @@
 // Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию.
 {
-  "editor.fontFamily": "Hack",
+  "editor.fontFamily": "Operator Mono, Fira Code, Hack",
   "editor.lineHeight": 24,
   "editor.fontLigatures": true,
   // "editor.tokenColorCustomizations": {
@@ -8,10 +8,11 @@
   //     "fontStyle": "italic"
   //   }
   // },
-  "editor.fontSize": 16,
+  "editor.fontSize": 17.5,
+  "editor.fontWeight": "normal",
   "editor.renderWhitespace": "boundary",
   "editor.renderIndentGuides": true,
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "editor.minimap.enabled": true,
   "editor.wordWrap": "on",
   "editor.snippetSuggestions": "top",
@@ -32,7 +33,8 @@
     "**/.DS_Store": true
   },
   "code-runner.executorMap": {
-    "elixir": "elixir"
+    "elixir": "elixir",
+    "csharp": "dotnet run"
   },
   "files.associations": {
     "*.tpl": "html",
@@ -55,10 +57,16 @@
     "postcss": "css",
   },
   "extensions.ignoreRecommendations": true,
-  "explorer.confirmDelete": true,
+  "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": true,
-  "workbench.iconTheme": "vscode-great-icons",
-  "workbench.colorTheme": "Ayu Mirage",
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
-  "python.linting.flake8Enabled": true
+  "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "python.linting.flake8Enabled": true,
+  "search.exclude": {
+    "**/vendor": true,
+    "vendor": true
+  },
+  "css.lint.emptyRules": "ignore",
+  "workbench.colorTheme": "One Monokai",
+  "breadcrumbs.enabled": true
 }

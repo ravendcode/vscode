@@ -13,6 +13,18 @@
 		"description": "Log output to console"
 	}
 */
+    "#!/usr/bin/env php": {
+        "prefix": "envphp",
+        "body": [
+            "#!/usr/bin/env php\n"
+        ]
+    },
+    "<?php": {
+        "prefix": "ph",
+        "body": [
+            "<?php\n\n"
+        ]
+    },
     "{{}}": {
         "prefix": "nn",
         "body": [
@@ -117,13 +129,6 @@
         ],
         "description": "jinja url_for"
     },
-    "django url": {
-        "prefix": "url",
-        "body": [
-            "{% url '$1' %}"
-        ],
-        "description": "django url"
-    },
     "jinja for": {
         "prefix": "jfor",
         "body": [
@@ -147,28 +152,19 @@
         ],
         "description": "jinja if inline"
     },
-    // "<?php": {
-    //     "prefix": "ph",
-    //     "body": [
-    //         "<?php",
-    //         "$1"
-    //     ],
-    //     "description": "<?php"
-    // },
-    // "<?php ?>": {
-    //     "prefix": "php",
-    //     "body": [
-    //         "<?php $1 ?>$2"
-    //     ],
-    //     "description": "<?php ?>"
-    // },
-    // "php bash": {
-    //     "prefix": "phpb",
-    //     "body": [
-    //         "#!/usr/bin/env php"
-    //     ],
-    //     "description": "php bash"
-    // },
+    "<?php ?>": {
+        "prefix": "php",
+        "body": [
+            "<?php $1 ?>"
+        ],
+        "description": "<?php ?>"
+    },
+    "<?= ?>": {
+        "prefix": "pe",
+        "body": [
+            "<?= $1 ?>"
+        ]
+    },
     "go define title": {
         "prefix": "deft",
         "body": [

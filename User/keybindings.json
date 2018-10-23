@@ -7,5 +7,15 @@
     {
         "key": "ctrl+alt+n",
         "command": "-code-runner.run"
+    },
+    {
+        "key": "f4",
+        "command": "namespaceResolver.import",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "-namespaceResolver.import",
+        "when": "editorTextFocus"
     }
 ]

@@ -16,7 +16,14 @@
     "echo PHP_EOL": {
         "prefix": "eln",
         "body": [
-            "echo $1.PHP_EOL;"
+            "echo $1, PHP_EOL;"
+        ],
+        "description": "echo PHP_EOL"
+    },
+    "alias echo PHP_EOL": {
+        "prefix": "cw",
+        "body": [
+            "echo $1, PHP_EOL;"
         ],
         "description": "echo PHP_EOL"
     },
@@ -41,13 +48,6 @@
         ],
         "description": "echo"
     },
-    "alias eln": {
-        "prefix": "cw",
-        "body": [
-            "echo $1.PHP_EOL;"
-        ],
-        "description": "alias eln"
-    },
     "echo br": {
         "prefix": "eb",
         "body": [
@@ -63,14 +63,14 @@
         "description": "var_dump()"
     },
     "alias var_dump()": {
-        "prefix": "vv",
+        "prefix": "v",
         "body": [
             "var_dump($1);"
         ],
         "description": "alias var_dump()"
     },
     "function": {
-        "prefix": "ff",
+        "prefix": "fun",
         "body": [
             "function $1($2)",
             "{",
@@ -88,6 +88,16 @@
             "}"
         ],
         "description": "public function"
+    },
+    "public static function": {
+        "prefix": "pubsf",
+        "body": [
+            "public static function $1($2)",
+            "{",
+            "\t$3",
+            "}"
+        ],
+        "description": "public static function"
     },
     "private function": {
         "prefix": "prif",
@@ -122,8 +132,68 @@
     "return": {
         "prefix": "r",
         "body": [
-            "return${1:;}"
+            "return"
         ],
         "description": "return"
+    },
+    "class Controller": {
+        "prefix": "cc",
+        "body": [
+            "class $1Controller$2\n{\n\t$3\n}"
+        ]
+    },
+    "var_dump and die": {
+        "prefix": "vdd",
+        "body": [
+            "die(var_dump($1));"
+        ]
+    },
+    "__DIR__": {
+        "prefix": "dir",
+        "body": [
+            "__DIR__"
+        ]
+    },
+    "declare": {
+        "prefix": "dec",
+        "body": [
+            "declare (strict_types = 1);"
+        ]
+    },
+    "static": {
+        "prefix": "ss",
+        "body": [
+            "static"
+        ]
+    },
+    "public static": {
+        "prefix": "pubs",
+        "body": [
+            "public static"
+        ]
+    },
+    "protected static": {
+        "prefix": "pros",
+        "body": [
+            "protected static"
+        ]
+    },
+    "private static": {
+        "prefix": "pris",
+        "body": [
+            "private static"
+        ]
+    },
+    "require": {
+        "prefix": "rr",
+        "body": [
+            "require ${1:__DIR__ . }'$2';\n"
+        ]
+    },
+    "require_once": {
+        "prefix": "rrq",
+        "body": [
+            "require_once ${1:__DIR__ . }'$2';\n"
+        ]
     }
 }

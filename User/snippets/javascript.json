@@ -135,9 +135,9 @@
         "prefix": "trye",
         "body": [
             "try {",
-            "\t$2",
-            "} catch (err) {",
             "\t$1",
+            "} catch (err) {",
+            "\t$2",
             "}"
         ],
         "description": "trycatch(e)"

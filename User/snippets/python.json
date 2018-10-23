@@ -15,7 +15,7 @@
 	}
 */
 	"Print to console": {
-		"prefix": "pp",
+		"prefix": "p",
 		"body": [
 			"print($1)"
 		],
@@ -107,6 +107,12 @@
 		"prefix": "res",
 		"body": [
 			"response"
+		]
+	},
+	"benv": {
+		"prefix": "benv",
+		"body": [
+			"#!/usr/local/bin/python3.6"
 		]
 	},
 	"main": {

@@ -16,9 +16,15 @@
     "Print to console": {
         "prefix": "cw",
         "body": [
-            "console.log($1)${2:;}"
+            "console.log($1)"
         ],
         "description": "Log output to console"
+    },
+    "const": {
+        "prefix": "c",
+        "body": [
+            "const "
+        ]
     },
     "iife": {
         "prefix": "iife",
@@ -48,12 +54,12 @@
         ],
         "description": "named function"
     },
-    "require": {
-        "prefix": "req",
+    "return": {
+        "prefix": "r",
         "body": [
-            "require('$1')$2"
+            "return"
         ],
-        "description": "require"
+        "description": "return"
     },
     "module.exports": {
         "prefix": "me",
@@ -105,7 +111,7 @@
         "description": "export class"
     },
     "class constructor": {
-        "prefix": "con",
+        "prefix": "ctor",
         "body": [
             "constructor($1) {\n\t$0\n}"
         ],

@@ -90,8 +90,16 @@
 			"func ${1:main}($2) {",
 			"\t$3",
 			"}"
-		],
-		"description": "func named"
+		]
+	},
+	"package and func main": {
+		"prefix": "main",
+		"body": [
+			"package main\n",
+			"func main() {",
+			"\t$1",
+			"}"
+		]
 	},
 	"func test": {
 		"prefix": "fnt",

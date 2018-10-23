@@ -15,6 +15,12 @@
 		}
 	*/
 
+	"Console.WriteLine": {
+		"prefix": "cw",
+		"body": [
+			"Console.WriteLine($1);"
+		]
+	},
 	"Print to console Unity": {
 		"prefix": "pl",
 		"body": [
