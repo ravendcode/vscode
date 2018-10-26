@@ -28,19 +28,19 @@
         "description": "console.error"
     },
     "ctx": {
-        "prefix": "ct",
+        "prefix": "cc",
         "body": [
             "ctx"
         ]
     },
     "ctx.throw()": {
-        "prefix": "ctt",
+        "prefix": "cct",
         "body": [
             "ctx.throw($1);"
         ]
     },
     "ctx.body": {
-        "prefix": "ctb",
+        "prefix": "ccb",
         "body": [
             "ctx.body = "
         ]
