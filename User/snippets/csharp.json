@@ -35,11 +35,65 @@
 		],
 		"description": "Print to console Unity alias"
 	},
-	"Debug log output to console Unity": {
-		"prefix": "dl",
+	"public": {
+		"prefix": "pub",
 		"body": [
-			"Debug.Log($1);$2"
-		],
-		"description": "Debug log output to console Unity"
+			"public "
+		]
+	},
+	"protected": {
+		"prefix": "pro",
+		"body": [
+			"protected "
+		]
+	},
+	"private": {
+		"prefix": "pri",
+		"body": [
+			"private "
+		]
+	},
+	"public void name()": {
+		"prefix": "pubf",
+		"body": [
+			"public ${1:void} $2($3)\n{\n\t$4\n}"
+		]
+	},
+	"protected void name()": {
+		"prefix": "prof",
+		"body": [
+			"protected ${1:void} $2($3)\n{\n\t$4\n}"
+		]
+	},
+	"private void name()": {
+		"prefix": "prif",
+		"body": [
+			"private ${1:void} $2($3)\n{\n\t$4\n}"
+		]
+	},
+	"Init MonoBehaviour": {
+		"prefix": "mono",
+		"body": [
+			"using System.Collections;",
+			"using System.Collections.Generic;",
+			"using UnityEngine;\n",
+			"public class ${TM_FILENAME_BASE} : MonoBehaviour\n{\n\t// Use this for initialization",
+			"\tvoid Start()\n\t{\n\t\n\t}\n",
+			"\t// Update is called once per frame",
+			"\tvoid Update()\n\t{\n\t\n\t}",
+			"}"
+		]
+	},
+	"Debug log output to console Unity": {
+		"prefix": "l",
+		"body": [
+			"Debug.Log($1);"
+		]
+	},
+	"Debug log error output to console Unity": {
+		"prefix": "le",
+		"body": [
+			"Debug.LogError($1);"
+		]
 	}
 }

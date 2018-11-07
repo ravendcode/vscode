@@ -19,19 +19,6 @@
             "#!/usr/bin/env php\n"
         ]
     },
-    "<?php": {
-        "prefix": "ph",
-        "body": [
-            "<?php\n\n"
-        ]
-    },
-    "{{}}": {
-        "prefix": "nn",
-        "body": [
-            "{{$1}}$2"
-        ],
-        "description": "ng print"
-    },
     "html5": {
         "prefix": "html5",
         "body": [
@@ -111,7 +98,7 @@
     "jinja extends": {
         "prefix": "je",
         "body": [
-            "{% extends '${1:layouts/base.html}' %}"
+            "{% extends '${1:base.html}' %}"
         ],
         "description": "jinja extends"
     },
@@ -152,15 +139,8 @@
         ],
         "description": "jinja if inline"
     },
-    "<?php ?>": {
-        "prefix": "php",
-        "body": [
-            "<?php $1 ?>"
-        ],
-        "description": "<?php ?>"
-    },
     "<?= ?>": {
-        "prefix": "pe",
+        "prefix": "e",
         "body": [
             "<?= $1 ?>"
         ]
