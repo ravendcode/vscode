@@ -77,9 +77,8 @@
 			"using System.Collections;",
 			"using System.Collections.Generic;",
 			"using UnityEngine;\n",
-			"public class ${TM_FILENAME_BASE} : MonoBehaviour\n{\n\t// Use this for initialization",
+			"public class ${TM_FILENAME_BASE} : MonoBehaviour\n{",
 			"\tvoid Start()\n\t{\n\t\n\t}\n",
-			"\t// Update is called once per frame",
 			"\tvoid Update()\n\t{\n\t\n\t}",
 			"}"
 		]
