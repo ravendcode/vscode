@@ -1,5 +1,5 @@
 {
-    /*
+	/*
 	 // Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and
 	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
@@ -13,152 +13,145 @@
 		"description": "Log output to console"
 	}
 */
-    "#!/usr/bin/env php": {
-        "prefix": "envphp",
-        "body": [
-            "#!/usr/bin/env php\n"
-        ]
-    },
-    "html5": {
-        "prefix": "html5",
-        "body": [
-            "<!DOCTYPE html>",
-            "<html lang=\"ru\">",
-            "<head>",
-            "\t<meta charset=\"utf-8\">",
-            "\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
-            "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">",
-            "\t<meta name=\"description\" content=\"\">",
-            "\t<meta name=\"keywords\" content=\"\">",
-            "\t<meta name=\"robots\" content=\"all\">",
-            "\t<title>$1</title>",
-            "</head>",
-            "<body>",
-            "\t$2",
-            "</body>",
-            "</html>"
-        ],
-        "description": "html5"
-    },
-    "jinja {{}}": {
-        "prefix": "jj",
-        "body": [
-            "{{ $1 }}"
-        ],
-        "description": "jinja {{}}"
-    },
-    "jinja %": {
-        "prefix": "ji",
-        "body": [
-            "{% $1 %}"
-        ],
-        "description": "jinja %"
-    },
-    "jinja if": {
-        "prefix": "jif",
-        "body": [
-            "{% if $1 %}",
-            "\t$2",
-            "{% endif %}"
-        ],
-        "description": "jinja if"
-    },
-    "jinja title": {
-        "prefix": "jt",
-        "body": [
-            "{% block title %}$1{% endblock %}"
-        ],
-        "description": "jinja title"
-    },
-    "jinja block inline": {
-        "prefix": "jbl",
-        "body": [
-            "{% block ${1:content} %}$2{% endblock %}"
-        ],
-        "description": "jinja block inline"
-    },
-    "jinja block": {
-        "prefix": "jb",
-        "body": [
-            "{% block ${1:content} %}",
-            "\t$2",
-            "{% endblock %}"
-        ],
-        "description": "jinja block"
-    },
-    "jinja macro": {
-        "prefix": "jm",
-        "body": [
-            "{% macro $1 %}",
-            "\t$2",
-            "{% endmacro %}"
-        ],
-        "description": "jinja macro"
-    },
-    "jinja extends": {
-        "prefix": "je",
-        "body": [
-            "{% extends '${1:base.html}' %}"
-        ],
-        "description": "jinja extends"
-    },
-    "jinja token": {
-        "prefix": "jtoken",
-        "body": [
-            "{{ form.csrf_token }}"
-        ],
-        "description": "jinja token"
-    },
-    "jinja url_for": {
-        "prefix": "ju",
-        "body": [
-            "{{ url_for('$1') }}"
-        ],
-        "description": "jinja url_for"
-    },
-    "jinja for": {
-        "prefix": "jfor",
-        "body": [
-            "{% for $1 in $2 %}",
-            "\t$3",
-            "{% endfor %}"
-        ],
-        "description": "jinja for"
-    },
-    "jinja include": {
-        "prefix": "jin",
-        "body": [
-            "{% include '$1' %}"
-        ],
-        "description": "jinja include"
-    },
-    "jinja if inline": {
-        "prefix": "jifl",
-        "body": [
-            "{% if field.errors %} has-error{% endif %}"
-        ],
-        "description": "jinja if inline"
-    },
-    "<?= ?>": {
-        "prefix": "e",
-        "body": [
-            "<?= $1 ?>"
-        ]
-    },
-    "go define title": {
-        "prefix": "deft",
-        "body": [
-            "{{define \"${1:title}\"}}$2{{end}}"
-        ],
-        "description": "go define title"
-    },
-    "go define body": {
-        "prefix": "def",
-        "body": [
-            "{{define \"${1:body}\"}}",
-            "\t$2",
-            "{{end}}"
-        ],
-        "description": "go define body"
-    }
+	"html5": {
+		"prefix": "html5",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"ru\">",
+			"<head>",
+			"\t<meta charset=\"utf-8\">",
+			"\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+			"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">",
+			"\t<meta name=\"description\" content=\"\">",
+			"\t<meta name=\"keywords\" content=\"\">",
+			"\t<meta name=\"robots\" content=\"all\">",
+			"\t<title>$1</title>",
+			"</head>",
+			"<body>",
+			"\t$2",
+			"</body>",
+			"</html>"
+		]
+	},
+	"jinja {{}}": {
+		"prefix": "jj",
+		"body": [
+			"{{ $1 }}"
+		],
+		"description": "jinja {{}}"
+	},
+	"jinja %": {
+		"prefix": "ji",
+		"body": [
+			"{% $1 %}"
+		],
+		"description": "jinja %"
+	},
+	"jinja if": {
+		"prefix": "jif",
+		"body": [
+			"{% if $1 %}",
+			"\t$2",
+			"{% endif %}"
+		],
+		"description": "jinja if"
+	},
+	"jinja title": {
+		"prefix": "jt",
+		"body": [
+			"{% block title %}$1{% endblock %}"
+		],
+		"description": "jinja title"
+	},
+	"jinja block inline": {
+		"prefix": "jbl",
+		"body": [
+			"{% block ${1:content} %}$2{% endblock %}"
+		],
+		"description": "jinja block inline"
+	},
+	"jinja block": {
+		"prefix": "jb",
+		"body": [
+			"{% block ${1:content} %}",
+			"\t$2",
+			"{% endblock %}"
+		],
+		"description": "jinja block"
+	},
+	"jinja macro": {
+		"prefix": "jm",
+		"body": [
+			"{% macro $1 %}",
+			"\t$2",
+			"{% endmacro %}"
+		],
+		"description": "jinja macro"
+	},
+	"jinja extends": {
+		"prefix": "je",
+		"body": [
+			"{% extends '${1:base.html}' %}"
+		],
+		"description": "jinja extends"
+	},
+	"jinja token": {
+		"prefix": "jtoken",
+		"body": [
+			"{{ form.csrf_token }}"
+		],
+		"description": "jinja token"
+	},
+	"jinja url_for": {
+		"prefix": "ju",
+		"body": [
+			"{{ url_for('$1') }}"
+		],
+		"description": "jinja url_for"
+	},
+	"jinja for": {
+		"prefix": "jfor",
+		"body": [
+			"{% for $1 in $2 %}",
+			"\t$3",
+			"{% endfor %}"
+		],
+		"description": "jinja for"
+	},
+	"jinja include": {
+		"prefix": "jin",
+		"body": [
+			"{% include '$1' %}"
+		],
+		"description": "jinja include"
+	},
+	"jinja if inline": {
+		"prefix": "jifl",
+		"body": [
+			"{% if field.errors %} has-error{% endif %}"
+		],
+		"description": "jinja if inline"
+	},
+	"<?= ?>": {
+		"prefix": "e",
+		"body": [
+			"<?= $1 ?>"
+		]
+	},
+	"go define title": {
+		"prefix": "deft",
+		"body": [
+			"{{define \"${1:title}\"}}$2{{end}}"
+		],
+		"description": "go define title"
+	},
+	"go define body": {
+		"prefix": "def",
+		"body": [
+			"{{define \"${1:body}\"}}",
+			"\t$2",
+			"{{end}}"
+		],
+		"description": "go define body"
+	}
 }

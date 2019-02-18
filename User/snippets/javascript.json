@@ -13,19 +13,17 @@
 		"description": "Log output to console"
 	}
 */
-    "Print to console": {
+    "console.log": {
         "prefix": "cw",
         "body": [
             "console.log($1)"
-        ],
-        "description": "Log output to console"
+        ]
     },
     "console.error": {
         "prefix": "ce",
         "body": [
             "console.error(${1:e})"
-        ],
-        "description": "console.error"
+        ]
     },
     "ctx": {
         "prefix": "cc",
@@ -44,13 +42,6 @@
         "body": [
             "ctx.body = "
         ]
-    },
-    "#!/usr/bin/env node": {
-        "prefix": "benv",
-        "body": [
-            "#!/usr/bin/env node"
-        ],
-        "description": "#!/usr/bin/env node"
     },
     "iife": {
         "prefix": "iife",

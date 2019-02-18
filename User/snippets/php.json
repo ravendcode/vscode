@@ -1,199 +1,237 @@
 {
-    /*
-	 // Place your snippets for PHP here. Each snippet is defined under a snippet name and has a prefix, body and
-	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
-	 // Example:
-	 "Print to console": {
-		"prefix": "log",
+	// Place your snippets for php here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"echo PHP_EOL": {
+		"prefix": "cw",
 		"body": [
-			"console.log('$1');",
-			"$2"
-		],
-		"description": "Log output to console"
-	}
-*/
-    "echo PHP_EOL": {
-        "prefix": "eln",
-        "body": [
-            "echo $1, PHP_EOL;"
-        ],
-        "description": "echo PHP_EOL"
-    },
-    "alias echo PHP_EOL": {
-        "prefix": "cw",
-        "body": [
-            "echo $1, PHP_EOL;"
-        ],
-        "description": "echo PHP_EOL"
-    },
-    "$this->": {
-        "prefix": "tt",
-        "body": [
-            "$$this->"
-        ],
-        "description": "$this->"
-    },
-    "symfony render twig": {
-        "prefix": "sr",
-        "body": [
-            "return $$this->render('$1.html.twig');"
-        ],
-        "description": "symfony render twig"
-    },
-    "echo": {
-        "prefix": "e",
-        "body": [
-            "echo $1;"
-        ],
-        "description": "echo"
-    },
-    "echo br": {
-        "prefix": "eb",
-        "body": [
-            "echo $1.'<br>';"
-        ],
-        "description": "echo br"
-    },
-    "var_dump()": {
-        "prefix": "vd",
-        "body": [
-            "var_dump($1);"
-        ],
-        "description": "var_dump()"
-    },
-    "alias var_dump()": {
-        "prefix": "v",
-        "body": [
-            "var_dump($1);"
-        ],
-        "description": "alias var_dump()"
-    },
-    "function": {
-        "prefix": "fun",
-        "body": [
-            "function $1($2)",
-            "{",
-            "\t$3",
-            "}"
-        ],
-        "description": "function"
-    },
-    "public function": {
-        "prefix": "pubf",
-        "body": [
-            "public function ${1:__construct}($2)",
-            "{",
-            "\t$3",
-            "}"
-        ],
-        "description": "public function"
-    },
-    "public static function": {
-        "prefix": "pubsf",
-        "body": [
-            "public static function $1($2)",
-            "{",
-            "\t$3",
-            "}"
-        ],
-        "description": "public static function"
-    },
-    "private function": {
-        "prefix": "prif",
-        "body": [
-            "private function $1($2)",
-            "{",
-            "\t$3",
-            "}"
-        ],
-        "description": "private function"
-    },
-    "protected function": {
-        "prefix": "prof",
-        "body": [
-            "protected function $1($2)",
-            "{",
-            "\t$3",
-            "}"
-        ],
-        "description": "protected function"
-    },
-    "public function action": {
-        "prefix": "pubfa",
-        "body": [
-            "public function $1Action($2)",
-            "{",
-            "\t$3",
-            "}"
-        ],
-        "description": "public function action"
-    },
-    "return": {
-        "prefix": "r",
-        "body": [
-            "return"
-        ],
-        "description": "return"
-    },
-    "class Controller": {
-        "prefix": "cc",
-        "body": [
-            "class $1Controller$2\n{\n\t$3\n}"
-        ]
-    },
-    "var_dump and die": {
-        "prefix": "vdd",
-        "body": [
-            "die(var_dump($1));"
-        ]
-    },
-    "__DIR__": {
-        "prefix": "dir",
-        "body": [
-            "__DIR__"
-        ]
-    },
-    "declare": {
-        "prefix": "dec",
-        "body": [
-            "declare (strict_types = 1);"
-        ]
-    },
-    "static": {
-        "prefix": "ss",
-        "body": [
-            "static"
-        ]
-    },
-    "public static": {
-        "prefix": "pubs",
-        "body": [
-            "public static"
-        ]
-    },
-    "protected static": {
-        "prefix": "pros",
-        "body": [
-            "protected static"
-        ]
-    },
-    "private static": {
-        "prefix": "pris",
-        "body": [
-            "private static"
-        ]
-    },
-    "require": {
-        "prefix": "rr",
-        "body": [
-            "require ${1:__DIR__ . }'$2';\n"
-        ]
-    },
-    "require_once": {
-        "prefix": "rrq",
-        "body": [
-            "require_once ${1:__DIR__ . }'$2';\n"
-        ]
-    }
+			"echo $1, PHP_EOL;"
+		]
+	},
+	"alias echo PHP_EOL": {
+		"prefix": "eln",
+		"body": [
+			"echo $1, PHP_EOL;"
+		]
+	},
+	"echo": {
+		"prefix": "e",
+		"body": [
+			"echo $1;"
+		]
+	},
+	"$this->": {
+		"prefix": "this",
+		"body": [
+			"$$this->"
+		]
+	},
+	"symfony render twig": {
+		"prefix": "sr",
+		"body": [
+			"return $$this->render('$1.html.twig');"
+		]
+	},
+	"echo br": {
+		"prefix": "ebr",
+		"body": [
+			"echo $1, '<br>';"
+		]
+	},
+	"var_dump": {
+		"prefix": "vd",
+		"body": [
+			"var_dump($1);"
+		]
+	},
+	"alias var_dump": {
+		"prefix": "v",
+		"body": [
+			"var_dump($1);"
+		]
+	},
+	"function named": {
+		"prefix": "fn",
+		"body": [
+			"function $1($2)",
+			"{",
+			"\t$3",
+			"}"
+		]
+	},
+	"function lambda": {
+		"prefix": "fl",
+		"body": [
+			"function ($1)",
+			"{",
+			"\t$2",
+			"}"
+		]
+	},
+	"lambda": {
+		"prefix": "ll",
+		"body": [
+			"function ($1) use ($2)",
+			"{",
+			"\t$3",
+			"}"
+		]
+	},
+	"inline lambda": {
+		"prefix": "lll",
+		"body": [
+			"function ($1) {$2}"
+		]
+	},
+	"public function": {
+		"prefix": "pubf",
+		"body": [
+			"public function ${1:__construct}($2)",
+			"{",
+			"\t$3",
+			"}"
+		]
+	},
+	"public static function": {
+		"prefix": "pubsf",
+		"body": [
+			"public static function $1($2)",
+			"{",
+			"\t$3",
+			"}"
+		]
+	},
+	"private function": {
+		"prefix": "prif",
+		"body": [
+			"private function $1($2)",
+			"{",
+			"\t$3",
+			"}"
+		]
+	},
+	"protected function": {
+		"prefix": "prof",
+		"body": [
+			"protected function $1($2)",
+			"{",
+			"\t$3",
+			"}"
+		]
+	},
+	"public function action": {
+		"prefix": "pubfa",
+		"body": [
+			"public function $1Action($2)",
+			"{",
+			"\t$3",
+			"}"
+		]
+	},
+	"return": {
+		"prefix": "r",
+		"body": [
+			"return"
+		]
+	},
+	"class Controller": {
+		"prefix": "cc",
+		"body": [
+			"class $1${2:Controller}$3\n{\n\t$4\n}"
+		]
+	},
+	"var_dump and die": {
+		"prefix": "vdd",
+		"body": [
+			"die(var_dump($1));"
+		]
+	},
+	"__DIR__": {
+		"prefix": "dir",
+		"body": [
+			"__DIR__"
+		]
+	},
+	"declare": {
+		"prefix": "dec",
+		"body": [
+			"declare(strict_types=1);"
+		]
+	},
+	"static": {
+		"prefix": "ss",
+		"body": [
+			"static"
+		]
+	},
+	"public static": {
+		"prefix": "pubs",
+		"body": [
+			"public static"
+		]
+	},
+	"protected static": {
+		"prefix": "pros",
+		"body": [
+			"protected static"
+		]
+	},
+	"private static": {
+		"prefix": "pris",
+		"body": [
+			"private static"
+		]
+	},
+	"require": {
+		"prefix": "rr",
+		"body": [
+			"require ${1:__DIR__.}'$2';\n"
+		]
+	},
+	"require_once": {
+		"prefix": "rrq",
+		"body": [
+			"require_once ${1:__DIR__.}'$2';\n"
+		]
+	},
+	"Name::class": {
+		"prefix": "cl",
+		"body": [
+			"$1::class"
+		]
+	},
+	"compact": {
+		"prefix": "com",
+		"body": [
+			"compact($1)"
+		]
+	},
+	"dump": {
+		"prefix": "d",
+		"body": [
+			"dump($1)"
+		]
+	},
+	"dd": {
+		"prefix": "dd",
+		"body": [
+			"dd($1)"
+		]
+	},
+	"bin2hex(random_bytes(16))": {
+		"prefix": "token",
+		"body": [
+			"bin2hex(random_bytes(16))"
+		]
+	},
 }
