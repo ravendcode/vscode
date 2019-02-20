@@ -195,13 +195,13 @@
 	"require": {
 		"prefix": "rr",
 		"body": [
-			"require ${1:__DIR__.}'$2';\n"
+			"require ${1:__DIR__ . }'$2';\n"
 		]
 	},
 	"require_once": {
 		"prefix": "rrq",
 		"body": [
-			"require_once ${1:__DIR__.}'$2';\n"
+			"require_once ${1:__DIR__ . }'$2';\n"
 		]
 	},
 	"Name::class": {
