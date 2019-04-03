@@ -1,32 +1,28 @@
 {
-/*
-	// Place your snippets for PHP - Laravel Blade here. Each snippet is defined under a snippet name and has a prefix, body and
+	// Place your snippets for blade here. Each snippet is defined under a snippet name and has a prefix, body and
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
 	// Example:
-	"Print to console": {
-		"prefix": "log",
-		"body": [
-			"console.log('$1');",
-			"$2"
-		],
-		"description": "Log output to console"
-	}
-*/
-    "blade extends": {
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"blade extends": {
         "prefix": "ext",
         "body": [
-            "@extends('${1:layouts.app}')"
-        ],
-        "description": "blade extends"
+            "@extends('${1:layouts.base}')"
+        ]
     },
     "blade echo": {
         "prefix": "jj",
         "body": [
             "{{ $1 }}"
-        ],
-        "description": "blade echo"
+        ]
     },
     "blade unless": {
         "prefix": "un",
@@ -34,8 +30,7 @@
             "@unless ($1)",
 			"\t$2",
 			"@endunless"
-        ],
-        "description": "blade unless"
+        ]
     },
     "blade foreach": {
         "prefix": "foreach",
@@ -43,8 +38,7 @@
             "@foreach ($1)",
 			"\t$2",
 			"@endforeach"
-        ],
-        "description": "blade foreach"
+        ]
     },
     "blade if": {
         "prefix": "if",
@@ -52,8 +46,7 @@
             "@if ($1)",
 			"\t$2",
 			"@endif"
-        ],
-        "description": "blade if"
+        ]
     },
     "blade if else": {
         "prefix": "ife",
@@ -63,8 +56,7 @@
 			"@else",
 			"\t$3",
 			"@endif"
-        ],
-        "description": "blade if else"
+        ]
     },
     "blade forelse": {
         "prefix": "fore",
@@ -74,8 +66,7 @@
 			"@empty",
 			"\t$3",
 			"@forelse"
-        ],
-        "description": "blade forelse"
+        ]
     },
     "blade section": {
         "prefix": "sec",
@@ -83,21 +74,28 @@
             "@section('${1:content}')",
 			"\t$2",
 			"@endsection"
-        ],
-        "description": "blade section"
+        ]
     },
     "blade section title": {
         "prefix": "sect",
         "body": [
-            "@section('${1:title}', '$2')"
-        ],
-        "description": "blade section title"
+            "@section('${1:title}', ${2:$$title})"
+        ]
+    },
+    "blade view": {
+        "prefix": "view",
+        "body": [
+			"@extends('layouts.base')\n",
+			"@section('title', $$title)\n",
+			"@section('content')",
+			"\t$1",
+			"@endsection"
+		]
     },
     "blade yeild": {
         "prefix": "y",
         "body": [
             "@yield('${1:content}')"
-        ],
-        "description": "blade yeild"
+        ]
     }
 }

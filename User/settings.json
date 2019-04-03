@@ -59,7 +59,7 @@
   "emmet.includeLanguages": {
     "twig": "html",
     "erb": "html",
-    "laravel-blade": "html",
+    "blade": "html",
     // "javascript": "html",
     "vue-html": "html",
     "postcss": "css",
