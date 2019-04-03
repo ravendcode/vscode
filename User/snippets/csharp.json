@@ -1,71 +1,97 @@
 {
-	/*
-		 // Place your snippets for C# here. Each snippet is defined under a snippet name and has a prefix, body and
-		 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-		 // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
-		 // same ids are connected.
-		 // Example:
-		 "Print to console": {
-			"prefix": "log",
-			"body": [
-				"console.log('$1');",
-				"$2"
-			],
-			"description": "Log output to console"
-		}
-	*/
-
-	"Console.WriteLine": {
-		"prefix": "cw",
+	// Place your snippets for csharp here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Print in debug log": {
+		"prefix": "log",
 		"body": [
-			"Console.WriteLine($1);"
+			"Debug.Log($1);"
 		]
 	},
-	"Print to console Unity": {
-		"prefix": "pl",
-		"body": [
-			"print($1);$2"
-		],
-		"description": "Print to console Unity"
-	},
-	"Print to console Unity alias": {
+	"Debug.Log()": {
 		"prefix": "p",
 		"body": [
-			"print($1);$2"
-		],
-		"description": "Print to console Unity alias"
-	},
-	"public": {
-		"prefix": "pub",
-		"body": [
-			"public "
+			"Debug.Log($1);"
 		]
 	},
-	"protected": {
-		"prefix": "pro",
+	"return": {
+		"prefix": "r",
 		"body": [
-			"protected "
+			"return"
 		]
 	},
-	"private": {
-		"prefix": "pri",
+	"void Start()": {
+		"prefix": "start",
 		"body": [
-			"private "
+			"void Start()",
+			"{\n\t$1\n}"
 		]
 	},
-	"public void name()": {
+	"void Update()": {
+		"prefix": "update",
+		"body": [
+			"void Update()",
+			"{\n\t$1\n}"
+		]
+	},
+	"void FixedUpdate()": {
+		"prefix": "fupdate",
+		"body": [
+			"void FixedUpdate()",
+			"{\n\t$1\n}"
+		]
+	},
+	"void OnTriggerEnter2D(Collider2D other)": {
+		"prefix": "ontriggerenter2d",
+		"body": [
+			"void OnTriggerEnter2D(Collider2D other)",
+			"{\n\t$1\n}"
+		]
+	},
+	"void OnTriggerEnter(Collider other)": {
+		"prefix": "ontriggerenter",
+		"body": [
+			"void OnTriggerEnter(Collider other)",
+			"{\n\t$1\n}"
+		]
+	},
+	"void OnTriggerExit2D(Collider2D other)": {
+		"prefix": "ontriggerexit2d",
+		"body": [
+			"void OnTriggerExit2D(Collider2D other)",
+			"{\n\t$1\n}"
+		]
+	},
+	"void OnTriggerExit(Collider other)": {
+		"prefix": "ontriggerexit",
+		"body": [
+			"void OnTriggerExit(Collider other)",
+			"{\n\t$1\n}"
+		]
+	},
+	"public void method()": {
 		"prefix": "pubf",
 		"body": [
 			"public ${1:void} $2($3)\n{\n\t$4\n}"
 		]
 	},
-	"protected void name()": {
+	"protected void method()": {
 		"prefix": "prof",
 		"body": [
 			"protected ${1:void} $2($3)\n{\n\t$4\n}"
 		]
 	},
-	"private void name()": {
+	"private void method()": {
 		"prefix": "prif",
 		"body": [
 			"private ${1:void} $2($3)\n{\n\t$4\n}"
@@ -83,16 +109,22 @@
 			"}"
 		]
 	},
-	"Debug log output to console Unity": {
-		"prefix": "l",
+	"public": {
+		"prefix": "pub",
 		"body": [
-			"Debug.Log($1);"
+			"public "
 		]
 	},
-	"Debug log error output to console Unity": {
-		"prefix": "le",
+	"protected": {
+		"prefix": "pro",
 		"body": [
-			"Debug.LogError($1);"
+			"protected "
+		]
+	},
+	"private": {
+		"prefix": "pri",
+		"body": [
+			"private "
 		]
 	}
 }
