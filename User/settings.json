@@ -68,7 +68,7 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": true,
   "workbench.iconTheme": "eq-material-theme-icons",
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  // "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "search.exclude": {
     "**/vendor": true,
     "vendor": true
@@ -77,6 +77,7 @@
   "workbench.colorTheme": "Atom One Dark",
   "css.validate": false,
   "breadcrumbs.enabled": true,
+  "code-runner.runInTerminal": true,
   "python.linting.flake8Enabled": true,
   "python.linting.pylintEnabled": false
 }
