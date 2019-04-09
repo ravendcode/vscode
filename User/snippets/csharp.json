@@ -80,19 +80,19 @@
 		]
 	},
 	"public void method()": {
-		"prefix": "pubf",
+		"prefix": "pubv",
 		"body": [
 			"public ${1:void} $2($3)\n{\n\t$4\n}"
 		]
 	},
 	"protected void method()": {
-		"prefix": "prof",
+		"prefix": "prov",
 		"body": [
 			"protected ${1:void} $2($3)\n{\n\t$4\n}"
 		]
 	},
 	"private void method()": {
-		"prefix": "prif",
+		"prefix": "priv",
 		"body": [
 			"private ${1:void} $2($3)\n{\n\t$4\n}"
 		]
@@ -125,6 +125,18 @@
 		"prefix": "pri",
 		"body": [
 			"private "
+		]
+	},
+	"[SerializeField]": {
+		"prefix": "sf",
+		"body": [
+			"[SerializeField] "
+		]
+	},
+	"IEnumerator": {
+		"prefix": "ie",
+		"body": [
+			"IEnumerator "
 		]
 	}
 }
