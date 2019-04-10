@@ -16,7 +16,7 @@
 	// 	"description": "Log output to console"
 	// }
 	"<?php tag": {
-		"scope": "php",
+		// "scope": "php",
 		"prefix": "ph",
 		"body": [
 			"<?php\n\n",

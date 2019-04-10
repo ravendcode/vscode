@@ -219,13 +219,13 @@
 	"dump": {
 		"prefix": "d",
 		"body": [
-			"dump($1)"
+			"dump($1);"
 		]
 	},
 	"dd": {
 		"prefix": "dd",
 		"body": [
-			"dd($1)"
+			"dd($1);"
 		]
 	},
 	"bin2hex(random_bytes(16))": {
@@ -234,4 +234,23 @@
 			"bin2hex(random_bytes(16))"
 		]
 	},
+	"view": {
+		"prefix": "view",
+		"body": [
+			"return view('$1', $2);"
+		]
+	},
+	"$this->view": {
+		"prefix": "vv",
+		"body": [
+			"return $$this->view();"
+		]
+	},
+	"$this->view with title": {
+		"prefix": "vvv",
+		"body": [
+			"$$this->title = '$1';",
+			"return $$this->view();"
+		]
+	}
 }

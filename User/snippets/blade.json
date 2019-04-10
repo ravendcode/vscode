@@ -92,6 +92,16 @@
 			"@endsection"
 		]
     },
+    "blade view admin": {
+        "prefix": "viewa",
+        "body": [
+			"@extends('layouts.admin')\n",
+			"@section('title', $$title)\n",
+			"@section('content')",
+			"\t$1",
+			"@endsection"
+		]
+    },
     "blade yeild": {
         "prefix": "y",
         "body": [
