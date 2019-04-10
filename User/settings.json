@@ -1,83 +1,60 @@
-// Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию.
 {
-  "editor.fontFamily": "Operator Mono, Fira Code, Hack",
-  "editor.lineHeight": 24,
-  "editor.fontLigatures": true,
-  // "editor.tokenColorCustomizations": {
-  //   "keywords": {
-  //     "fontStyle": "italic"
-  //   }
-  // },
-  "editor.fontSize": 17.5,
-  "editor.fontWeight": "normal",
-  "editor.renderWhitespace": "boundary",
-  "editor.renderIndentGuides": true,
-  "editor.minimap.enabled": true,
-  "editor.wordWrap": "on",
-  "editor.snippetSuggestions": "top",
-  "window.zoomLevel": 0,
-  "files.eol": "\n",
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "files.exclude": {
-    "**/*.pyc": true,
-    "**/__pycache__": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/.git": true,
-    "**/.DS_Store": true,
-    "**/*.meta": true,
-    "**/*.*.meta": true,
-    "**/*.unity": true,
-    "**/*.unityproj": true,
-    "**/*.mat": true,
-    "**/*.fbx": true,
-    "**/*.FBX": true,
-    "**/*.tga": true,
-    "**/*.cubemap": true,
-    "**/*.prefab": true,
-    "**/Library": true,
-    "**/ProjectSettings": true,
-    "**/Temp": true
-  },
-  "code-runner.executorMap": {
-    "elixir": "elixir",
-    "csharp": "dotnet run"
-  },
-  "files.associations": {
-    "*.tpl": "html",
-    "*.hbs": "handlebars",
-    "*.js": "javascript",
-    "*.html": "html",
-    ".env.dist": "dotenv"
-  },
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.syntaxProfiles": {
-    "js": "html",
-    "postcss": "css",
-  },
-  "emmet.includeLanguages": {
-    "twig": "html",
-    "erb": "html",
-    "blade": "html",
-    // "javascript": "html",
-    "vue-html": "html",
-    "postcss": "css",
-  },
-  "extensions.ignoreRecommendations": true,
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": true,
-  "workbench.iconTheme": "eq-material-theme-icons",
-  // "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-  "search.exclude": {
-    "**/vendor": true,
-    "vendor": true
-  },
-  "css.lint.emptyRules": "ignore",
-  "workbench.colorTheme": "Atom One Dark",
-  "css.validate": false,
-  "breadcrumbs.enabled": true,
-  "code-runner.runInTerminal": true,
-  "python.linting.flake8Enabled": true,
-  "python.linting.pylintEnabled": false
+    "editor.fontFamily": "Fira Code Medium, Operator Mono, Fira Code, Hack",
+    "editor.lineHeight": 24,
+    "editor.fontLigatures": true,
+    // "editor.tokenColorCustomizations": {
+    //   "keywords": {
+    //     "fontStyle": "italic"
+    //   }
+    // },
+    "editor.fontSize": 16,
+    "editor.tabSize": 4,
+    "editor.fontWeight": "normal",
+    "editor.renderWhitespace": "boundary",
+    "editor.renderIndentGuides": true,
+    "editor.minimap.enabled": true,
+    "editor.wordWrap": "on",
+    "editor.snippetSuggestions": "top",
+    "window.zoomLevel": 0,
+    "files.eol": "\n",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/*.pyc": true,
+        "**/__pycache__": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/*.meta": true,
+        "**/*.*.meta": true,
+        "**/*.unity": true,
+        "**/*.unityproj": true,
+        "**/*.mat": true,
+        "**/*.fbx": true,
+        "**/*.FBX": true,
+        "**/*.tga": true,
+        "**/*.cubemap": true,
+        "**/*.prefab": true,
+        "**/Library": true,
+        "**/ProjectSettings": true,
+        "**/Temp": true
+    },
+    "code-runner.executorMap": {
+        "elixir": "elixir",
+        "csharp": "dotnet run"
+    },
+    "emmet.includeLanguages": {
+        "blade": "html",
+        "erb": "html"
+    },
+    // "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "workbench.iconTheme": "material-icon-theme",
+    "php.validate.enable": true,
+    "php.validate.run": "onSave",
+    "php.suggest.basic": false,
+    "files.autoSave": "onFocusChange",
+    "editor.codeLens": false,
+    "code-runner.runInTerminal": true,
+    "workbench.colorTheme": "One Dark Pro Vivid"
 }

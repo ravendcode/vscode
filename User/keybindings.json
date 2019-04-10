@@ -1,21 +1,23 @@
-// Поместите настраиваемые сочетания клавиш в этот файл, чтобы перезаписать клавиши по умолчанию.
+// Place your key bindings in this file to override the defaults
 [
     {
-        "key": "ctrl+alt+b",
-        "command": "code-runner.run"
+        "key": "shift+alt+.",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
     },
     {
-        "key": "ctrl+alt+n",
-        "command": "-code-runner.run"
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
     },
     {
-        "key": "f4",
-        "command": "namespaceResolver.import",
-        "when": "editorTextFocus"
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+alt+i",
-        "command": "-namespaceResolver.import",
-        "when": "editorTextFocus"
+        "key": "shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]
