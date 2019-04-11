@@ -241,13 +241,13 @@
 		]
 	},
 	"$this->view": {
-		"prefix": "vv",
+		"prefix": "ren",
 		"body": [
 			"return $$this->view();"
 		]
 	},
 	"$this->view with title": {
-		"prefix": "vvv",
+		"prefix": "tren",
 		"body": [
 			"$$this->title = '$1';",
 			"return $$this->view();"
