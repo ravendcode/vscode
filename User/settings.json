@@ -48,6 +48,9 @@
         "blade": "html",
         "erb": "html"
     },
+    // "files.associations": {
+    //     "*.blade.php": "html",
+    // },
     // "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "workbench.iconTheme": "material-icon-theme",
     "php.validate.enable": true,
