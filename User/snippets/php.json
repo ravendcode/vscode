@@ -30,12 +30,12 @@
 			"echo $1;"
 		]
 	},
-	"$this->": {
-		"prefix": "this",
-		"body": [
-			"$$this->"
-		]
-	},
+	// "$this->": {
+	// 	"prefix": "this",
+	// 	"body": [
+	// 		"$$this->"
+	// 	]
+	// },
 	"symfony render twig": {
 		"prefix": "sr",
 		"body": [
@@ -232,6 +232,12 @@
 		"prefix": "token",
 		"body": [
 			"bin2hex(random_bytes(16))"
+		]
+	},
+	"return redirect()->route()": {
+		"prefix": "red",
+		"body": [
+			"return redirect()->route('$1');"
 		]
 	},
 	"view": {
