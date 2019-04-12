@@ -37,7 +37,7 @@
 	// 	]
 	// },
 	"symfony render twig": {
-		"prefix": "sr",
+		"prefix": "s:ren",
 		"body": [
 			"return $$this->render('$1.html.twig');"
 		]
@@ -235,25 +235,25 @@
 		]
 	},
 	"return redirect()->route()": {
-		"prefix": "red",
+		"prefix": "l:red",
 		"body": [
 			"return redirect()->route('$1');"
 		]
 	},
 	"view": {
-		"prefix": "view",
+		"prefix": "l:view",
 		"body": [
 			"return view('$1', $2);"
 		]
 	},
 	"$this->view": {
-		"prefix": "ren",
+		"prefix": "l:ren",
 		"body": [
 			"return $$this->view();"
 		]
 	},
 	"$this->view with title": {
-		"prefix": "tren",
+		"prefix": "l:tren",
 		"body": [
 			"$$this->title = '$1';",
 			"return $$this->view();"
