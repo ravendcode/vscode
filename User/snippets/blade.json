@@ -98,7 +98,7 @@
 			"@extends('layouts.admin')\n",
 			"@section('title', $$title)\n",
 			"@section('content')",
-			"\t$1",
+			"\t<h1>{{ $$title }}</h1>",
 			"@endsection"
 		]
     },
