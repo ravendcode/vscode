@@ -16,13 +16,13 @@
     "console.log": {
         "prefix": "cw",
         "body": [
-            "console.log($1)"
+            "console.log($1);$2"
         ]
     },
     "console.error": {
         "prefix": "ce",
         "body": [
-            "console.error(${1:e})"
+            "console.error(${1:e});"
         ]
     },
     "ctx": {
@@ -108,6 +108,15 @@
         ],
         "description": "return"
     },
+    "return react": {
+        "prefix": "rr",
+        "body": [
+            "return (",
+            "\t$1",
+            ");"
+        ],
+        "description": "return react"
+    },
     "async": {
         "prefix": "as",
         "body": [
@@ -142,7 +151,7 @@
     "module.exports": {
         "prefix": "me",
         "body": [
-            "module.exports = $0"
+            "module.exports = $0;"
         ],
         "description": "module.exports"
     },
@@ -152,6 +161,13 @@
             "'use strict'\n"
         ],
         "description": "use strict"
+    },
+    "lambda one param": {
+        "prefix": "l",
+        "body": [
+            "$1 => $2"
+        ],
+        "description": "lambda"
     },
     "lambda": {
         "prefix": "ll",
@@ -260,14 +276,14 @@
     "import $1 from $1": {
         "prefix": "ii",
         "body": [
-            "import $1 from '$1'"
+            "import $1 from '$1';"
         ],
         "description": "import $1 from $1"
     },
     "import from": {
         "prefix": "iii",
         "body": [
-            "import $2 from '$1'"
+            "import $2 from '$1';"
         ],
         "description": "import from"
     },
@@ -341,7 +357,7 @@
     "import": {
 		"prefix": "im",
 		"body": [
-			"import $2 from '$1'"
+			"import $2 from '$1';"
 		]
 	}
 }
