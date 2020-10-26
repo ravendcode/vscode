@@ -19,12 +19,10 @@
 			"<!DOCTYPE html>",
 			"<html lang=\"ru\">",
 			"<head>",
-			"\t<meta charset=\"utf-8\">",
-			"\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+			"\t<meta charset=\"UTF-8\">",
 			"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">",
 			"\t<meta name=\"description\" content=\"\">",
 			"\t<meta name=\"keywords\" content=\"\">",
-			"\t<meta name=\"robots\" content=\"all\">",
 			"\t<title>$1</title>",
 			"</head>",
 			"<body>",
@@ -103,11 +101,17 @@
 		"description": "jinja token"
 	},
 	"jinja url_for": {
-		"prefix": "ju",
+		"prefix": "jju",
 		"body": [
 			"{{ url_for('$1') }}"
 		],
 		"description": "jinja url_for"
+	},
+	"jinja url": {
+		"prefix": "ju",
+		"body": [
+			"{% url '$1' %}"
+		]
 	},
 	"jinja for": {
 		"prefix": "jfor",
@@ -124,6 +128,18 @@
 			"{% include '$1' %}"
 		],
 		"description": "jinja include"
+	},
+	"jinja static inc": {
+		"prefix": "jis",
+		"body": [
+			"{% static '$1' %}"
+		]
+	},
+	"jinja static load": {
+		"prefix": "jisl",
+		"body": [
+			"{% load static %}"
+		]
 	},
 	"jinja if inline": {
 		"prefix": "jifl",
