@@ -1,22 +1,21 @@
 {
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "files.autoSave": "onFocusChange",
-  "editor.fontFamily": "Fira Code Medium, Operator Mono, Fira Code, Hack",
-  "editor.fontSize": 17,
+  "editor.fontFamily": "JetBrains Mono, Fira Code Retina, Operator Mono, Fira Code, Hack",
+  "editor.fontSize": 16,
   "editor.lineHeight": 24,
   "editor.fontLigatures": true,
   "editor.fontWeight": "normal",
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "selection",
   "editor.renderIndentGuides": true,
   "editor.minimap.enabled": true,
   "editor.wordWrap": "on",
-  "editor.snippetSuggestions": "top",
-  "emmet.showSuggestionsAsSnippets": true,
+  // "editor.snippetSuggestions": "top",
+  "emmet.showSuggestionsAsSnippets": false,
   "window.zoomLevel": 0,
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "workbench.iconTheme": "material-icon-theme",
   "diffEditor.ignoreTrimWhitespace": false,
   "files.exclude": {
     "**/*.pyc": true,
@@ -37,29 +36,34 @@
     "**/*.prefab": true,
     "**/Library": true,
     "**/ProjectSettings": true,
-    "**/Temp": true
+    "**/Temp": true,
+    "**/obj": true,
+    "**/.idea": true
   },
+  "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
     "elixir": "elixir",
-    "csharp": "dotnet run"
+    "csharp": "dotnet run",
+    "python": "py"
   },
   "emmet.includeLanguages": {
     "blade": "html",
+    "twig": "html",
     "erb": "html",
     "javascript": "javascriptreact"
   },
-  "code-runner.runInTerminal": true,
+  "files.associations": {
+    "*.blade.php": "html"
+  },
+  "prettier.singleQuote": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "html.format.endWithNewline": true,
+  "html.format.indentHandlebars": true,
+  "html.format.extraLiners": "",
   "workbench.colorTheme": "Atom One Dark",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "prettier.singleQuote": true
+  "workbench.iconTheme": "ayu",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true
 }
-
-
-
