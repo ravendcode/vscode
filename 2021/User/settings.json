@@ -4,6 +4,12 @@
     "editor.fontLigatures": true,
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
+    "emmet.includeLanguages": {
+        "blade": "html",
+        "twig": "html",
+        "erb": "html",
+        "javascript": "javascriptreact"
+    },
     "files.autoSave": "onFocusChange",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
