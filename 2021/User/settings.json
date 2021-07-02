@@ -1,6 +1,6 @@
 {
     "editor.fontSize": 17,
-    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'Fantasque Sans Mono', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
