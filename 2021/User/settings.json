@@ -17,5 +17,28 @@
     "html.format.endWithNewline": true,
     "html.format.extraLiners": "",
     "security.workspace.trust.untrustedFiles": "open",
-    "liveServer.settings.donotShowInfoMsg": true
+    "liveServer.settings.donotShowInfoMsg": true,
+    "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": ["/k", "%USERPROFILE%\\profile.cmd"],
+            "icon": "terminal-cmd"
+        },
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Git Bash": {
+            "source": "Git Bash",
+            "path": [
+                "C:\\Program Files\\Git\\bin\\bash.exe"
+            ],
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "explorer.confirmDelete": false,
 }
