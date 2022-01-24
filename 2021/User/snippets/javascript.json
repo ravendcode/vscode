@@ -66,7 +66,7 @@
 	"event.preventDefault();": {
 		"prefix": "pd",
 		"body": [
-			"event.preventDefault();"
+			"${1:event}.preventDefault();"
 		]
 	},
 	"module.exports": {
@@ -113,6 +113,12 @@
 		"prefix": "qs",
 		"body": [
 			"document.querySelector('$1');"
+		]
+	},
+	"document.querySelectorAll": {
+		"prefix": "qsa",
+		"body": [
+			"document.querySelectorAll('$1');"
 		]
 	},
 	"$1.addEventListener": {
@@ -314,5 +320,19 @@
 		"body": [
 			"/* eslint-disable ${1:no-console} */"
 		]
-	}
+	},
+	"DOMContentLoaded": {
+		"prefix": "dom",
+		"body": [
+			"document.addEventListener('DOMContentLoaded', (event) => {\n\t$1\n});"
+		]
+	},
+	"$DOMContentLoaded": {
+		"prefix": "$dom",
+		"body": [
+			"$(function () {",
+			"\t$1",
+			"});"
+		]
+	},
 }
