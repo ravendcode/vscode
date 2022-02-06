@@ -16,7 +16,7 @@
 		"prefix": "main",
 		"body": [
 			"<div class=\"wrapper\">",
-			"\t<heaader class=\"header\">$1</heaader>",
+			"\t<header class=\"header\">$1</header>",
 			"\t<main class=\"main\"></main>",
 			"\t<footer class=\"footer\"></footer>",
 			"</div>"
