@@ -29,5 +29,19 @@
 		"body": [
 			"padding: ${1:0}px ${2:0}px ${3:0}px ${4:0}px;"
 		]
+	},
+	"@media min_width": {
+		"scope": "css,scss",
+		"prefix": "_mm",
+		"body": [
+			"@media (min-width: $1px) {\n\t$2\n}"
+		]
+	},
+	"@media max_width": {
+		"scope": "css,scss",
+		"prefix": "_ma",
+		"body": [
+			"@media (max-width: $1px) {\n\t$2\n}"
+		]
 	}
 }
