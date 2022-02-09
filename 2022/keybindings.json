@@ -7,5 +7,9 @@
   {
     "key": "ctrl+alt+n",
     "command": "-code-runner.run"
+  },
+  {
+    "key": "alt+`",
+    "command": "extension.ecsstractor_port_runwithbemandcomments"
   }
 ]
