@@ -41,5 +41,5 @@
     },
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "explorer.confirmDelete": false,
-    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
 }

@@ -135,8 +135,14 @@
 			"event.currentTarget"
 		]
 	},
+	"export": {
+		"prefix": "e",
+		"body": [
+			"export $1"
+		]
+	},
 	"exports": {
-		"prefix": "ex",
+		"prefix": "es",
 		"body": [
 			"exports.$1"
 		]
