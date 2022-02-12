@@ -4,6 +4,8 @@
     "editor.fontLigatures": true,
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
+    "editor.snippetSuggestions": "top",
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
     "emmet.includeLanguages": {
         "blade": "html",
         "twig": "html",
@@ -42,7 +44,6 @@
     },
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "explorer.confirmDelete": false,
-    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
     "files.associations": {
         "*.html": "html"
     }
