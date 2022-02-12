@@ -8,6 +8,7 @@
         "blade": "html",
         "twig": "html",
         "erb": "html",
+        "nunjucks": "html",
         "javascript": "javascriptreact"
     },
     "files.autoSave": "onFocusChange",
@@ -41,5 +42,8 @@
     },
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "explorer.confirmDelete": false,
-    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+    "files.associations": {
+        "*.html": "html"
+    }
 }

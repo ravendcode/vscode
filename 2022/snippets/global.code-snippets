@@ -15,7 +15,17 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-
+	"wrapper": {
+		"scope": "html,nunjucks",
+		"prefix": "w",
+		"body": [
+			"<div class=\"wrapper\">",
+			"\t<header class=\"header\">$1</header>",
+			"\t<main class=\"main\"></main>",
+			"\t<footer class=\"footer\"></footer>",
+			"</div>"
+		]
+	},
 	"margin: 0px 0px 0px 0px": {
 		"scope": "css,scss",
 		"prefix": "mm",

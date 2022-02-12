@@ -1,0 +1,89 @@
+{
+	// Place your snippets for nunjucks here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"jinja {{}}": {
+		"prefix": "jj",
+		"body": [
+			"{{ $1 }}"
+		]
+	},
+	"jinja %": {
+		"prefix": "jjj",
+		"body": [
+			"{% $1 %}"
+		]
+	},
+	"jinja if": {
+		"prefix": "jif",
+		"body": [
+			"{% if $1 %}",
+			"\t$2",
+			"{% endif %}"
+		]
+	},
+	"jinja title": {
+		"prefix": "jt",
+		"body": [
+			"{% set ${1:app_title} = '$2' %}"
+		]
+	},
+	"jinja title inline": {
+		"prefix": "jtl",
+		"body": [
+			"{% block title %}$1{% endblock %}"
+		]
+	},
+	"jinja block inline": {
+		"prefix": "jbl",
+		"body": [
+			"{% block ${1:body} %}$2{% endblock %}"
+		]
+	},
+	"jinja block": {
+		"prefix": "jb",
+		"body": [
+			"{% block ${1:body} %}",
+			"\t$2",
+			"{% endblock %}"
+		]
+	},
+	"jinja macro": {
+		"prefix": "jm",
+		"body": [
+			"{% macro $1 %}",
+			"\t$2",
+			"{% endmacro %}"
+		]
+	},
+	"jinja extends": {
+		"prefix": "je",
+		"body": [
+			"{% extends \"layout/${1:base}.njk\" %}"
+		]
+	},
+	"jinja for": {
+		"prefix": "jfor",
+		"body": [
+			"{% for $1 in $2 %}",
+			"\t$3",
+			"{% endfor %}"
+		]
+	},
+	"jinja include": {
+		"prefix": "ji",
+		"body": [
+			"{% include \"include/${1:header}.njk\" %}"
+		]
+	}
+}
