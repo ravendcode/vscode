@@ -12,19 +12,25 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"jinja {{}}": {
+	"nunjucks {{}}": {
 		"prefix": "jj",
 		"body": [
 			"{{ $1 }}"
 		]
 	},
-	"jinja %": {
+	"nunjucks %": {
 		"prefix": "jjj",
 		"body": [
 			"{% $1 %}"
 		]
 	},
-	"jinja if": {
+	"nunjucks {{ img('file') }}": {
+		"prefix": "jji",
+		"body": [
+			"{{ img('$1') }}"
+		]
+	},
+	"nunjucks if": {
 		"prefix": "jif",
 		"body": [
 			"{% if $1 %}",
@@ -32,25 +38,25 @@
 			"{% endif %}"
 		]
 	},
-	"jinja title": {
+	"nunjucks title": {
 		"prefix": "jt",
 		"body": [
 			"{% set ${1:app_title} = \"$2\" %}"
 		]
 	},
-	"jinja title inline": {
+	"nunjucks title inline": {
 		"prefix": "jtl",
 		"body": [
 			"{% block title %}$1{% endblock %}"
 		]
 	},
-	"jinja block inline": {
+	"nunjucks block inline": {
 		"prefix": "jbl",
 		"body": [
 			"{% block ${1:body} %}$2{% endblock %}"
 		]
 	},
-	"jinja block": {
+	"nunjucks block": {
 		"prefix": "jb",
 		"body": [
 			"{% block ${1:body} %}",
@@ -58,7 +64,7 @@
 			"{% endblock %}"
 		]
 	},
-	"jinja macro": {
+	"nunjucks macro": {
 		"prefix": "jm",
 		"body": [
 			"{% macro $1 %}",
@@ -66,13 +72,13 @@
 			"{% endmacro %}"
 		]
 	},
-	"jinja extends": {
+	"nunjucks extends": {
 		"prefix": "je",
 		"body": [
 			"{% extends \"layout/${1:base}.njk\" %}"
 		]
 	},
-	"jinja for": {
+	"nunjucks for": {
 		"prefix": "jfor",
 		"body": [
 			"{% for $1 in $2 %}",
@@ -80,10 +86,16 @@
 			"{% endfor %}"
 		]
 	},
-	"jinja include": {
+	"nunjucks include": {
 		"prefix": "ji",
 		"body": [
-			"{% include \"include/${1:header}.njk\" %}"
+			"{% include \"_include/${1:header}.njk\" %}"
+		]
+	},
+	"nunjucks require": {
+		"prefix": "jr",
+		"body": [
+			"<%= require('$1') %>"
 		]
 	}
 }
