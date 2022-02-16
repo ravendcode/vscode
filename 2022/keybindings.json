@@ -11,5 +11,9 @@
   {
     "key": "alt+`",
     "command": "extension.ecsstractor_port_runwithbemandcomments"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "fileutils.newFile"
   }
 ]

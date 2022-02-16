@@ -26,6 +26,13 @@
 			"</div>"
 		]
 	},
+	"form": {
+		"scope": "html,nunjucks",
+		"prefix": "f",
+		"body": [
+			"<form>$1</form>"
+		]
+	},
 	"margin: 0px 0px 0px 0px": {
 		"scope": "css,scss",
 		"prefix": "mm",
@@ -40,18 +47,18 @@
 			"padding: ${1:0}px ${2:0}px ${3:0}px ${4:0}px;"
 		]
 	},
-	"@media min_width": {
+	"@media min_width px": {
 		"scope": "css,scss",
-		"prefix": "_mm",
+		"prefix": "@mm",
 		"body": [
-			"@media (min-width: $1px) {\n\t$2\n}"
+			"@media (min-width: $1) {\n\t$2\n}"
 		]
 	},
-	"@media max_width": {
+	"@media max_width px": {
 		"scope": "css,scss",
-		"prefix": "_ma",
+		"prefix": "@ma",
 		"body": [
-			"@media (max-width: $1px) {\n\t$2\n}"
+			"@media (max-width: $1) {\n\t$2\n}"
 		]
 	}
 }

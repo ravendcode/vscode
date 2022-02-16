@@ -64,7 +64,7 @@
 		]
 	},
 	"event.preventDefault();": {
-		"prefix": "pd",
+		"prefix": "ee",
 		"body": [
 			"${1:event}.preventDefault();"
 		]
@@ -72,15 +72,25 @@
 	"module.exports": {
 		"prefix": "me",
 		"body": [
-				"module.exports = $0;"
+			"module.exports = $0;"
 		]
-},
-"use strict": {
+	},
+	"use strict": {
 		"prefix": "us",
 		"body": [
-				"'use strict';\n"
+			"'use strict';\n"
 		]
-},
+	},
+	"trycatch": {
+		"prefix": "try",
+		"body": [
+			"try {",
+			"\t$1",
+			"} catch (err) {",
+			"\t$2",
+			"}"
+		],
+	},
 	"trycatch(e)": {
 		"prefix": "tryn",
 		"body": [
@@ -110,23 +120,35 @@
 		]
 	},
 	"document.querySelector": {
-		"prefix": "qs",
+		"prefix": "q",
 		"body": [
 			"document.querySelector('$1');"
 		]
 	},
 	"document.querySelectorAll": {
-		"prefix": "qsa",
+		"prefix": "qq",
 		"body": [
 			"document.querySelectorAll('$1');"
 		]
 	},
 	"$1.addEventListener": {
-		"prefix": "ae",
+		"prefix": "a",
 		"body": [
 			"$1.addEventListener('$2', (event) => {",
 			"\t$3",
 			"});"
+		]
+	},
+	"event": {
+		"prefix": "e",
+		"body": [
+			"event$1"
+		]
+	},
+	"event.target": {
+		"prefix": "et",
+		"body": [
+			"event.target"
 		]
 	},
 	"event.currentTarget": {
@@ -136,7 +158,7 @@
 		]
 	},
 	"export": {
-		"prefix": "e",
+		"prefix": "ex",
 		"body": [
 			"export $1"
 		]

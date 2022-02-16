@@ -75,7 +75,7 @@
 	"nunjucks extends": {
 		"prefix": "je",
 		"body": [
-			"{% extends \"layout/${1:base}.njk\" %}"
+			"{% extends \"${1:base}.njk\" %}"
 		]
 	},
 	"nunjucks for": {
@@ -89,7 +89,7 @@
 	"nunjucks include": {
 		"prefix": "ji",
 		"body": [
-			"{% include \"_include/${1:header}.njk\" %}"
+			"{% include \"blocks/${1:_header}.njk\" %}"
 		]
 	},
 	"nunjucks require": {

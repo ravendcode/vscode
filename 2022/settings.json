@@ -1,11 +1,11 @@
 {
     "editor.fontSize": 17,
-    "editor.fontFamily": "'Fantasque Sans Mono', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'Fantasque Sans Mono', 'JetBrains Mono', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
     "editor.snippetSuggestions": "top",
-    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
     "emmet.includeLanguages": {
         "blade": "html",
         "twig": "html",
