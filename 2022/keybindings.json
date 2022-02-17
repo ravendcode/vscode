@@ -15,5 +15,9 @@
   {
     "key": "ctrl+n",
     "command": "fileutils.newFile"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "fileutils.newFileAtRoot"
   }
 ]

@@ -286,7 +286,7 @@
 	"export default": {
 		"prefix": "ed",
 		"body": [
-			"export default $1;"
+			"export default $1"
 		]
 	},
 	"import from": {

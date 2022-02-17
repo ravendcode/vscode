@@ -33,6 +33,20 @@
 			"<form>$1</form>"
 		]
 	},
+	"@import": {
+		"scope": "css,scss",
+		"prefix": "i",
+		"body": [
+			"@import '$1';"
+		]
+	},
+	"@import blocks": {
+		"scope": "css,scss",
+		"prefix": "ib",
+		"body": [
+			"@import '../blocks/$1/$1';"
+		]
+	},
 	"margin: 0px 0px 0px 0px": {
 		"scope": "css,scss",
 		"prefix": "mm",
