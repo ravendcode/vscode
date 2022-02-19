@@ -1,10 +1,15 @@
 {
-	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
-	// same ids are connected.
+	"scope": "javascript,typescript",
+	// Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	"scope": "javascript,typescript",
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
 	// Example:
 	// "Print to console": {
+	// 	"scope": "javascript,typescript",
 	// 	"prefix": "log",
 	// 	"body": [
 	// 		"console.log('$1');",
@@ -13,18 +18,21 @@
 	// 	"description": "Log output to console"
 	// }
 	"console.log": {
+		"scope": "javascript,typescript",
 		"prefix": "cw",
 		"body": [
 			"console.log($1);"
 		]
 	},
 	"console.error": {
+		"scope": "javascript,typescript",
 		"prefix": "ce",
 		"body": [
 			"console.error(${1:e});"
 		]
 	},
 	"iife": {
+		"scope": "javascript,typescript",
 		"prefix": "iife",
 		"body": [
 			"(function () {",
@@ -35,6 +43,7 @@
 		"description": "Immediately Invoked Function Expression"
 	},
 	"aiife": {
+		"scope": "javascript,typescript",
 		"prefix": "aiife",
 		"body": [
 			"(async () => {",
@@ -44,6 +53,7 @@
 		"description": "Async Immediately Invoked Function Expression"
 	},
 	"named function": {
+		"scope": "javascript,typescript",
 		"prefix": "f",
 		"body": [
 			"function $1($2) {",
@@ -51,37 +61,52 @@
 			"}"
 		]
 	},
+	"named event function": {
+		"scope": "javascript,typescript",
+		"prefix": "fe",
+		"body": [
+			"function $1(event) {",
+			"\t$2",
+			"}"
+		]
+	},
 	"await": {
+		"scope": "javascript,typescript",
 		"prefix": "aw",
 		"body": [
 			"await "
 		]
 	},
 	"const": {
+		"scope": "javascript,typescript",
 		"prefix": "c",
 		"body": [
 			"const $1"
 		]
 	},
 	"event.preventDefault();": {
+		"scope": "javascript,typescript",
 		"prefix": "ee",
 		"body": [
 			"${1:event}.preventDefault();"
 		]
 	},
 	"module.exports": {
+		"scope": "javascript,typescript",
 		"prefix": "me",
 		"body": [
 			"module.exports = $0;"
 		]
 	},
 	"use strict": {
+		"scope": "javascript,typescript",
 		"prefix": "us",
 		"body": [
 			"'use strict';\n"
 		]
 	},
 	"trycatch": {
+		"scope": "javascript,typescript",
 		"prefix": "try",
 		"body": [
 			"try {",
@@ -92,6 +117,7 @@
 		],
 	},
 	"trycatch(e)": {
+		"scope": "javascript,typescript",
 		"prefix": "tryn",
 		"body": [
 			"try {",
@@ -102,36 +128,42 @@
 		],
 	},
 	"const require": {
+		"scope": "javascript,typescript",
 		"prefix": "cr",
 		"body": [
 			"const $1 = require('$1');"
 		]
 	},
 	"require": {
+		"scope": "javascript,typescript",
 		"prefix": "rr",
 		"body": [
 			"require($1);"
 		]
 	},
 	"document": {
+		"scope": "javascript,typescript",
 		"prefix": "d",
 		"body": [
 			"document.$1"
 		]
 	},
 	"document.querySelector": {
+		"scope": "javascript,typescript",
 		"prefix": "q",
 		"body": [
 			"document.querySelector('$1');"
 		]
 	},
 	"document.querySelectorAll": {
+		"scope": "javascript,typescript",
 		"prefix": "qq",
 		"body": [
 			"document.querySelectorAll('$1');"
 		]
 	},
 	"$1.addEventListener": {
+		"scope": "javascript,typescript",
 		"prefix": "a",
 		"body": [
 			"$1.addEventListener('$2', (event) => {",
@@ -140,54 +172,70 @@
 		]
 	},
 	"event": {
+		"scope": "javascript,typescript",
 		"prefix": "e",
 		"body": [
 			"event$1"
 		]
 	},
 	"event.target": {
+		"scope": "javascript,typescript",
 		"prefix": "et",
 		"body": [
 			"event.target"
 		]
 	},
+	"event.target.value": {
+		"scope": "javascript,typescript",
+		"prefix": "ev",
+		"body": [
+			"event.target.value"
+		]
+	},
 	"event.currentTarget": {
+		"scope": "javascript,typescript",
 		"prefix": "ec",
 		"body": [
 			"event.currentTarget"
 		]
 	},
 	"export": {
+		"scope": "javascript,typescript",
 		"prefix": "ex",
 		"body": [
 			"export $1"
 		]
 	},
 	"exports": {
+		"scope": "javascript,typescript",
 		"prefix": "es",
 		"body": [
 			"exports.$1"
 		]
 	},
 	"return": {
+		"scope": "javascript,typescript",
 		"prefix": "r",
 		"body": [
 			"return"
 		]
 	},
 	"lambda": {
+		"scope": "javascript,typescript",
 		"prefix": "l",
 		"body": [
 			"($1) => $2"
 		]
 	},
 	"lambda e": {
+		"scope": "javascript,typescript",
 		"prefix": "le",
 		"body": [
 			"(err) => $1"
 		]
 	},
 	"lambda +": {
+		"scope": "javascript,typescript",
 		"prefix": "ll",
 		"body": [
 			"($1) => {",
@@ -196,6 +244,7 @@
 		]
 	},
 	"lambda promise": {
+		"scope": "javascript,typescript",
 		"prefix": "lp",
 		"body": [
 			"(${1:doc}) => {",
@@ -206,36 +255,42 @@
 		]
 	},
 	"ctx": {
+		"scope": "javascript,typescript",
 		"prefix": "cc",
 		"body": [
 			"ctx"
 		]
 	},
 	"ctx.throw()": {
+		"scope": "javascript,typescript",
 		"prefix": "cct",
 		"body": [
 			"ctx.throw($1)"
 		]
 	},
 	"ctx.body": {
+		"scope": "javascript,typescript",
 		"prefix": "ccb",
 		"body": [
 			"ctx.body = "
 		]
 	},
 	"lambda ctx": {
+		"scope": "javascript,typescript",
 		"prefix": "lc",
 		"body": [
 			"async (ctx) => { $2 }"
 		]
 	},
 	"lambda ctx next": {
+		"scope": "javascript,typescript",
 		"prefix": "lcn",
 		"body": [
 			"async (ctx, next) => { $2 }"
 		]
 	},
 	"lambda ctx +": {
+		"scope": "javascript,typescript",
 		"prefix": "llc",
 		"body": [
 			"async (ctx) => {",
@@ -244,6 +299,7 @@
 		]
 	},
 	"lambda ctx + next": {
+		"scope": "javascript,typescript",
 		"prefix": "llcn",
 		"body": [
 			"async (ctx, next) => {",
@@ -252,6 +308,7 @@
 		]
 	},
 	"async ctx": {
+		"scope": "javascript,typescript",
 		"prefix": "ac",
 		"body": [
 			"async $1(ctx) {",
@@ -260,6 +317,7 @@
 		]
 	},
 	"new promise": {
+		"scope": "javascript,typescript",
 		"prefix": "pp",
 		"body": [
 			"new Promise((resolve, reject) => {",
@@ -268,6 +326,7 @@
 		]
 	},
 	"lambda req res": {
+		"scope": "javascript,typescript",
 		"prefix": "lr",
 		"body": [
 			"(req, res) => {",
@@ -276,6 +335,7 @@
 		]
 	},
 	"lambda req res next": {
+		"scope": "javascript,typescript",
 		"prefix": "lrn",
 		"body": [
 			"(req, res, next) => {",
@@ -284,30 +344,42 @@
 		]
 	},
 	"export default": {
+		"scope": "javascript,typescript",
 		"prefix": "ed",
 		"body": [
 			"export default $1"
 		]
 	},
 	"import from": {
+		"scope": "javascript,typescript",
 		"prefix": "i",
 		"body": [
 			"import $2 from '$1';"
 		]
 	},
-	"import $1 from $1": {
+	"import": {
+		"scope": "javascript,typescript",
 		"prefix": "ii",
+		"body": [
+			"import '$1';"
+		]
+	},
+	"import $1 from $1": {
+		"scope": "javascript,typescript",
+		"prefix": "iii",
 		"body": [
 			"import $1 from '$1';"
 		]
 	},
 	"class constructor": {
+		"scope": "javascript,typescript",
 		"prefix": "ctor",
 		"body": [
 			"constructor($1) {\n\t$0\n}"
 		]
 	},
 	"mocha describe": {
+		"scope": "javascript,typescript",
 		"prefix": "des",
 		"body": [
 			"describe('$1', () => {",
@@ -316,6 +388,7 @@
 		]
 	},
 	"mocha it": {
+		"scope": "javascript,typescript",
 		"prefix": "it",
 		"body": [
 			"it('$1', async () => {",
@@ -324,6 +397,7 @@
 		]
 	},
 	"jest test": {
+		"scope": "javascript,typescript",
 		"prefix": "tt",
 		"body": [
 			"test('$1', async () => {",
@@ -332,35 +406,40 @@
 		]
 	},
 	"<$1 />": {
+		"scope": "javascript,typescript",
 		"prefix": "rv",
 		"body": [
 			"<$1 />"
 		]
 	},
 	"export from": {
+		"scope": "javascript,typescript",
 		"prefix": "ef",
 		"body": [
 			"export $2 from '$1';"
 		]
 	},
 	"eslint disable": {
+		"scope": "javascript,typescript",
 		"prefix": "esd",
 		"body": [
 			"/* eslint-disable ${1:no-console} */"
 		]
 	},
 	"DOMContentLoaded": {
+		"scope": "javascript,typescript",
 		"prefix": "dom",
 		"body": [
 			"document.addEventListener('DOMContentLoaded', (event) => {\n\t$1\n});"
 		]
 	},
 	"$DOMContentLoaded": {
+		"scope": "javascript,typescript",
 		"prefix": "$dom",
 		"body": [
 			"$(function () {",
 			"\t$1",
 			"});"
 		]
-	},
+	}
 }

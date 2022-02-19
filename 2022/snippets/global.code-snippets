@@ -15,6 +15,13 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"{{}}": {
+		"scope": "html",
+		"prefix": "j",
+		"body": [
+			"{{ $1 }}"
+		]
+	},
 	"wrapper": {
 		"scope": "html,nunjucks",
 		"prefix": "w",

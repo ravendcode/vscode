@@ -4,7 +4,7 @@
     "editor.fontLigatures": true,
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
-    "editor.snippetSuggestions": "top",
+    "editor.snippetSuggestions": "inline",
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
     "emmet.includeLanguages": {
         "blade": "html",
@@ -44,7 +44,18 @@
     },
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "explorer.confirmDelete": false,
-    "files.associations": {
-        "*.html": "html"
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.singleQuote": true,
+    "cSpell.language": "en,ru,lorem",
+    "cSpell.userWords": [
+        "browserslist"
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     }
 }

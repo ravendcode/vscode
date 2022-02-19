@@ -13,13 +13,13 @@
 	// 	"description": "Log output to console"
 	// }
 	"nunjucks {{}}": {
-		"prefix": "jj",
+		"prefix": "j",
 		"body": [
 			"{{ $1 }}"
 		]
 	},
 	"nunjucks %": {
-		"prefix": "jjj",
+		"prefix": "jj",
 		"body": [
 			"{% $1 %}"
 		]
