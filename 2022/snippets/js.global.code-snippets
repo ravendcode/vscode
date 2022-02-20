@@ -1,8 +1,6 @@
 {
-	"scope": "javascript,typescript",
 	// Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
-	"scope": "javascript,typescript",
 	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
 	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
@@ -52,21 +50,30 @@
 		],
 		"description": "Async Immediately Invoked Function Expression"
 	},
-	"named function": {
+	"arrow function": {
 		"scope": "javascript,typescript",
 		"prefix": "f",
 		"body": [
-			"function $1($2) {",
+			"const $1 = ($2) => {",
 			"\t$3",
-			"}"
+			"};"
 		]
 	},
-	"named event function": {
+	"export arrow function": {
 		"scope": "javascript,typescript",
-		"prefix": "fe",
+		"prefix": "ef",
 		"body": [
-			"function $1(event) {",
-			"\t$2",
+			"export const $1 = ($2) => {",
+			"\t$3",
+			"};"
+		]
+	},
+	"named function": {
+		"scope": "javascript,typescript",
+		"prefix": "ff",
+		"body": [
+			"function $1($2) {",
+			"\t$3",
 			"}"
 		]
 	},
@@ -350,25 +357,25 @@
 			"export default $1"
 		]
 	},
-	"import from": {
+	"import": {
 		"scope": "javascript,typescript",
 		"prefix": "i",
 		"body": [
-			"import $2 from '$1';"
+			"import '$1';"
 		]
 	},
-	"import": {
+	"import from": {
 		"scope": "javascript,typescript",
 		"prefix": "ii",
 		"body": [
-			"import '$1';"
+			"import $2 from '$1';"
 		]
 	},
 	"import $1 from $1": {
 		"scope": "javascript,typescript",
 		"prefix": "iii",
 		"body": [
-			"import $1 from '$1';"
+			"import $1 from './$1';"
 		]
 	},
 	"class constructor": {
@@ -405,16 +412,9 @@
 			"});"
 		]
 	},
-	"<$1 />": {
-		"scope": "javascript,typescript",
-		"prefix": "rv",
-		"body": [
-			"<$1 />"
-		]
-	},
 	"export from": {
 		"scope": "javascript,typescript",
-		"prefix": "ef",
+		"prefix": "exf",
 		"body": [
 			"export $2 from '$1';"
 		]
@@ -441,5 +441,49 @@
 			"\t$1",
 			"});"
 		]
-	}
+	},
+	// ? <=====================| React |=====================>
+	"react arrow function component": {
+		"scope": "javascript,typescript",
+		"prefix": "rfc",
+		"body": [
+			"const $1 = ($2) => {",
+			"\t$3",
+			"\treturn <div></div>;",
+			"};",
+			"\nexport default $1;"
+		]
+	},
+	"react arrow function event": {
+		"scope": "javascript,typescript",
+		"prefix": "rfe",
+		"body": [
+			"const $1 = (event) => {",
+			"\t$2",
+			"};"
+		]
+	},
+	"react useState": {
+		"scope": "javascript,typescript",
+		"prefix": "rs",
+		"body": [
+			"const [$1, set${1/(.*)/${1:/capitalize}/}] = useState($2);"
+		]
+	},
+	"react useEffect": {
+		"scope": "javascript,typescript",
+		"prefix": "re",
+		"body": [
+			"useEffect(() => {",
+			"\t$2",
+			"}, [$1]);"
+		]
+	},
+	"<$1 />": {
+		"scope": "javascript,typescript",
+		"prefix": "rv",
+		"body": [
+			"<$1 />"
+		]
+	},
 }
