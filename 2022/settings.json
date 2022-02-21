@@ -53,10 +53,20 @@
     "prettier.singleQuote": true,
     "cSpell.language": "en,ru,lorem",
     "cSpell.userWords": [
+        "basepath",
         "browserslist",
-        "pnpm"
+        "chunkhash",
+        "noopener",
+        "noreferrer",
+        "nosvg",
+        "pnpm",
+        "squoosh",
+        "truetype"
     ],
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
     }
 }
