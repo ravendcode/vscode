@@ -44,13 +44,19 @@
     },
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "explorer.confirmDelete": false,
+    "prettier.singleQuote": true,
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[scss]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "prettier.singleQuote": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
     "cSpell.language": "en,ru,lorem",
     "cSpell.userWords": [
         "basepath",
@@ -60,13 +66,8 @@
         "noreferrer",
         "nosvg",
         "pnpm",
+        "Ravend",
         "squoosh",
         "truetype"
-    ],
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    }
+    ]
 }
