@@ -467,7 +467,7 @@
 		"scope": "javascript,typescript",
 		"prefix": "rs",
 		"body": [
-			"const [$2, set${2/(.*)/${1:/capitalize}/}] = ${1:useState}($3);"
+			"const [$1, set${1/(.*)/${1:/capitalize}/}] = ${3:useState}($2);"
 		]
 	},
 	"react useEffect": {
