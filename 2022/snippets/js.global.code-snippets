@@ -447,11 +447,14 @@
 		"scope": "javascript,typescript",
 		"prefix": "rfc",
 		"body": [
-			"const $1 = ($2) => {",
-			"\t$3",
-			"\treturn <div></div>;",
+			"const ${TM_FILENAME_BASE/(.*) - (.*)/$1/} = ($2) => {",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t$3",
+			"\t\t</div>",
+			"\t);",
 			"};",
-			"\nexport default $1;"
+			"\nexport default ${TM_FILENAME_BASE/(.*) - (.*)/$1/};"
 		]
 	},
 	"react arrow function event": {
